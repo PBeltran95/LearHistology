@@ -10,3 +10,9 @@ Una vez elegida la categoría se lleva a otra subcategoría donde el usuario eli
 'com.ms-square:expandableTextView:0.1.4', debajo incluiré próximamente un Image Slider con todas las imágenes y los zooms para cada órgano correspondiente, es decir, para el estómago una imagen x2, x4, x8 de manera que se puedan dilucidar todos los componentes celulares del órgano.
 
 Sumado a lo previo me gustaría agregar que la aplicación va a contar con un Material Navigation Drawer, para así poder elegir el idioma entre inglés y español y para también poder cambiar entre modo oscuro y modo luminoso a gusto del usuario, así también como un botón de compartir y un intent para referirlo a la página de calificaciones de Playstore. Además, la idea es que la app contenga un Search Bar para así poder navegar de manera más fluida entre los distintos órganos en caso de ser necesario. Me gustaría comentar que a la fecha de creación de este README la aplicación solo lleva solo 4 días de desarrollo invirtiendo aproximadamente 3-4 horas por día, con lo que mi plazo aproximado de finalización es de un mes.
+
+Pantalla de inicio:
+![alt text](https://github.com/PBeltran95/Primer-proyecto-LearHistology/blob/main/Android%20Emulator%20-%20Pixel_4_API_295554.jpg)
+
+
+Nota: los colores e imagenes estan todas SUJETAS a cambios, ya que el producto aun esta en desarrollo. Gracias por leerme!
