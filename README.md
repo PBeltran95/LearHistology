@@ -12,7 +12,20 @@ Una vez elegida la categoría se lleva a otra subcategoría donde el usuario eli
 Sumado a lo previo me gustaría agregar que la aplicación va a contar con un Material Navigation Drawer, para así poder elegir el idioma entre inglés y español y para también poder cambiar entre modo oscuro y modo luminoso a gusto del usuario, así también como un botón de compartir y un intent para referirlo a la página de calificaciones de Playstore. Además, la idea es que la app contenga un Search Bar para así poder navegar de manera más fluida entre los distintos órganos en caso de ser necesario. Me gustaría comentar que a la fecha de creación de este README la aplicación solo lleva solo 4 días de desarrollo invirtiendo aproximadamente 3-4 horas por día, con lo que mi plazo aproximado de finalización es de un mes.
 
 Pantalla de inicio:
+
 ![alt text](https://github.com/PBeltran95/Primer-proyecto-LearHistology/blob/main/Android%20Emulator%20-%20Pixel_4_API_295554.jpg)
+
+Segunda pantalla:
+
+![alt text](https://github.com/PBeltran95/Primer-proyecto-LearHistology/blob/main/Android%20Emulator%20-%20Pixel_4_API_295555.jpg)
+
+Tercer pantalla:
+
+![alt text](https://github.com/PBeltran95/Primer-proyecto-LearHistology/blob/main/Android%20Emulator%20-%20Pixel_4_API_295558.jpg)
+
+Dependiendo de si seleccionamos los alveolos o la mucosa olfatoria, se pasa una variable que condiciona el contenido a mostrar en el siguiente fragmento:
+
+![alt text](https://github.com/PBeltran95/Primer-proyecto-LearHistology/blob/main/Android%20Emulator%20-%20Pixel_4_API_295557.jpg)
 
 
 Nota: los colores e imagenes estan todas SUJETAS a cambios, ya que el producto aun esta en desarrollo. Gracias por leerme!
