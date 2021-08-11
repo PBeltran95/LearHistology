@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/settings"
+        android:title=""
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/darkMode"
+                android:title="Dark mode"
+                android:icon="@drawable/ic_dark_mode"
+                app:showAsAction="always"/>
+
+            <item
+                android:id="@+id/language"
+                android:title="Language"
+                android:icon="@drawable/ic_language"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/share"
+                android:title="Share"
+                android:icon="@drawable/ic_share"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/btnRate"
+                android:icon="@drawable/ic_rate_us"
+                android:title="Rate us"
+                app:showAsAction="ifRoom"/>
+
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_500"
+    tools:context=".view.reproducer_sys">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_learn"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvPresentation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textScaleX="0.7"
+        android:text="Sistema reproductor masculino y femenino"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardElevation="10dp"
+        android:id="@+id/card"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintTop_toBottomOf="@id/card13"
+        app:layout_constraintStart_toStartOf="@id/card13"
+        app:layout_constraintEnd_toEndOf="@id/card13">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imgSistem"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/epididimo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Epididimo y conductillos"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgSistem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card14"
+        app:layout_constraintTop_toBottomOf="@id/card14"
+        app:layout_constraintEnd_toEndOf="@id/card14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem2"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/cuerpoluteojpg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cuerpo luteo"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintEnd_toEndOf="@id/card">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem3"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/epididimo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cordon espermatico"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintEnd_toEndOf="@id/card2"
+        app:layout_constraintStart_toStartOf="@id/card2"
+        app:layout_constraintTop_toBottomOf="@id/card2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem4"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/trompafalopio"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Trompa uterina"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card5"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card3"
+        app:layout_constraintTop_toBottomOf="@id/card3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem5"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/pene"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cuerpo del pene"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card6"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card4"
+        app:layout_constraintTop_toBottomOf="@id/card4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem6"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/placenta"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Placenta"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card7"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card5"
+        app:layout_constraintTop_toBottomOf="@id/card5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem7"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/prostata"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Prostata"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card8"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintEnd_toEndOf="@id/card6"
+        app:layout_constraintTop_toBottomOf="@id/card6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem8"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/cordonumbilical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cordon umbilical"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card9"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card7"
+        app:layout_constraintTop_toBottomOf="@id/card7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="9"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem9"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/vesiculaseminal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Vesicula seminal"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card10"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintEnd_toEndOf="@id/card6"
+        app:layout_constraintTop_toBottomOf="@id/card8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem10"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ovario"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Vagina y vulva"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card11"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toStartOf="@id/card7"
+        app:layout_constraintTop_toBottomOf="@id/card9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem11"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/pezon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Pezon"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card12"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintEnd_toEndOf="@id/card8"
+        app:layout_constraintTop_toBottomOf="@id/card10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="12"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem12"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/glandulamamaria"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Glandula mamaria"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card13"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintEnd_toStartOf="@id/card14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPresentation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="13"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem13"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/testicuilo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Testiculo"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card14"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="1dp"
+        app:layout_constraintStart_toEndOf="@id/card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPresentation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId14"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="14"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imgSistem14"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ovario"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle42"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Ovario"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/imgSistem14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

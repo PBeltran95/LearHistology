@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">LearnHistology</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_name">Sistema digestivo</string>
+    <string name="fragment_name2">Sistema respiratorio</string>
+    <string name="fragment_name3">Sistema cardiovascular</string>
+    <string name="fragment_name4">Sistema nervioso</string>
+    <string name="fragment_name5">Sistema linfatico</string>
+    <string name="fragment_name6">Sistema endocrino</string>
+    <string name="fragment_name7">Sistema oseo</string>
+    <string name="fragment_name8">Sistema reproductor</string>
+    <string name="fragment_name9">Sistema muscular</string>
+    <string name="fragment_name10">Oido y ojo</string>
+    <string name="fragment_name11">Sistema tegumentario</string>
+    <string name="fragment_name12">Tejido epitelial y conjuntivo</string>
+    <string name="fragment_name13">Tejido adiposo y cartilaginoso</string>
+    <string name="fragment_name14">Sistema urinario</string>
+
+    <string name="respiratory_histology">Histologia respiratoria</string>
+    <string name="epitelial_and_conective_tissue_histology">Histologia Epitelial y conectiva</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="example">La mucosa olfatoria está formada por una membrana epitelial y una lámina
+        propia densa. En su capa superficial o epitelial tiene 3 clases de células: las epiteliales,
+        llamadas también células de sostén o sustentaculares, las olfatorias o sensoriales
+        y las basales.Las células olfatorias o sensoriales (neuronas olfativas periféricas) son del
+        tipo de las células nerviosas bipolares con un cuerpo celular y una fibra nerviosa que sale
+        de cada extremo; una de ellas periférica muy corta de conducción sensitiva centrípeta que es
+        la dendrita y, la otra, el axón, que es una prolongación central de conducción centrífuga.
+        Estas células destinadas a recoger las impresiones olorosas transmiten la información
+        sensorial desde el ambiente periférico hasta el sistema nervioso central (SNC). Las finas
+        prolongaciones constituidas por las dendritas ascienden hacia la parte superficial
+        siguiendo las hendiduras que quedan entre las células de sostén y terminan en finísimas
+        fibras llamadas cilios olfativos. Por su parte el axón va desde la membrana epitelial
+        hacia la lámina propia. Los axones en la lámina propia se reúnen para formar haces de
+        fibras nerviosas olfatorias que se extienden hasta el bulbo olfatorio. Estas fibras en
+        su conjunto constituyen el nervio olfatorio. En el bulbo, las fibras del nervio olfatorio
+        terminan en una arborización libre y flexuosa. La terminación de cada fibra queda incluida
+        en una formación redondeada llamada glomérulo olfativo. En esta formación hace sinapsis
+        con la arborización dendrítica de las células mitrales presentes en la zona interna del
+        bulbo. Estas células mitrales, por su parte opuesta, emiten los cilindroejes que avanzan
+        hacia la región posterior del bulbo olfatorio para constituir la cinta olfativa, que se
+        divide en 4 raíces. Cada una de ellas sigue un trayecto especial que la conecta a uno de
+        los 4 centros corticales: calloso, hipocámpico, temporal y orbitario, que representan los
+        centros corticales del olfato. Desde la mucosa nasal las impresiones olfativas se trasladan
+        a la corteza cerebral siguiendo este trayecto nervioso que en su conjunto constituye
+        la vía olfativa</string>
+
+    <string name="laringeExample">Es una estructura hueca de 4-5 cm de largo, que comunica la
+            faringe con la tráquea. • Está compuesta por un esqueleto cartilaginoso articulado •
+            La laringe también es un órgano que reproduce sonidos, que en el ser humano contribuye
+            a la formación de los sonidos del habla.
+            4. Características histológicas de la laringe • Túnica mucosa • La lamina epitelial de la mucosa
+            laríngea las cuerdas vocales y Ios cartílagos aritenoideos estan compuestas por epitelio
+            plano estratificado • En el resto de Ia laringe, el epitelio es cilíndrico
+            seudoestratificado con cilias, cuyo movimiento desplaza la capa de mucus de la
+            superficie epitelial hacia arriba, en dirección de la faringe.
+            5. La lamina propia se compone de tejido conectivo bastante laxo Denso cerca de los cartílagos •
+            túnica submucosa • Más laxa • No hay en la cara posterior de la epiglotis y en las
+            cuerdas vocales, por lo que la mucosa laríngea se fija con firmeza a las
+            estructuras más profundas</string>
+    <string name="traquea">Está compuesta por 4 capas definidas, Mucosa: epitelio pseudoestratificado cilíndrico ciliado y una lámina propia con fibras elásticas abundantes.
+                    Submucosa, una capa cartilaginosa, y una adventicia. Los cartílagos hialinos con forma de C y el tejido fibroelastico y musculo liso cierran la brecha
+                 entre los extremos libres de la cara posterior de los cartílagos, uniéndose al esófago.
+                Epitelio traqueal: Está compuesto por células ciliadas, que proveen un movimiento de barrido coordinado de la cubierta de mucosa desde las partes más distales
+                 de las vías aéreas hacia la faringe, actúan en la forma de barredora que sirve como mecanismo protector para la eliminación de pequeñas partículas.
+                Las células mucosas (caliciformes) las cuales aumentan en la irritación crónica de las vías aéreas como en los fumadores, células en cepillo que son
+                células cilíndricas con microvellocidades, su superficie basal establece contacto sináptico con una terminación nerviosa aferente y se las considera
+                células receptoras. Células de gránulos pequeños. Células basales que sirven como una población de células de reserva que mantiene el reemplazo de las
+                otras células del epitelio. Con el paso del tiempo el cartílago hialino puede ser reemplazado parcialmente por tejido óseo.
+        </string>
+    <string name="Bronquio">Al principio tienen la misma estructura que la tráquea, en el sitio donde se hacen intrapulmonares cambian, los anillos cartilaginosos se tornan pequeños y menos abundantes. Estas placas por fin desaparecen en el sitio donde la vía aérea alcanza un diámetro alrededor de 1 mm y a partir de allí el bronquio empieza a llamarse bronquiolo. Los bronquios pueden identificarse por sus placas de cartílago y una capa circular de musculo liso. La segunda modificación que ocurre en la pared del bronquio intrapulmonar es la adición de musculo liso para formar una capa circunferencial completa. La pared del bronquio así queda conformada por cinco capas, una mucosa, muscular, submucosa (en los bronquios mayores hay glándulas y tejido adiposo), capa cartilaginosa y adventicia.</string>
+    <string name="alveolo">" Los alveolos son los espacios aéreos terminales del aparato respiratorio y las estructuras en las que se produce el intercambio gaseoso, su pared mide 0.2 mm de diámetro.  Los conductos alveolares son vías aéreas alargadas que casi no tienen paredes sino solo alveolos. En los tabiques hay anillos de ML. Los sacos alveolares son espacios  rodeados por cúmulos de alveolos. Los alveolos circundantes se abren hacia estos espacios. El epitelio alveolar está compuesto por células alveolares tipo 1 que son pavimentosas  planas muy delgadas. Alveolares tipo 2 cubicas, dispersas entre las 1, tienen cuerpos laminares que contienen el surfactante, además son las progenitoras de las alveolares tipo 1,  células en cepillo también en cantidad escasa pero que servirían como receptores para verificar la calidad del aire. "</string>
+
+
+</resources>

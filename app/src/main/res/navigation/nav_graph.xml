@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/main_menu">
+
+    <fragment
+        android:id="@+id/main_menu"
+        android:name="ar.com.learnhistology.learnhistology.main_menu"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_main_menu_to_conective_epitelial"
+            app:destination="@id/conective_epitelial" />
+        <action
+            android:id="@+id/action_main_menu_to_linfatic_sys"
+            app:destination="@id/linfatic_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_dig_sys_fragment"
+            app:destination="@id/dig_sys_fragment" />
+        <action
+            android:id="@+id/action_main_menu_to_urinary_sys"
+            app:destination="@id/urinary_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_eye_ear"
+            app:destination="@id/eye_ear" />
+        <action
+            android:id="@+id/action_main_menu_to_bone_sys"
+            app:destination="@id/bone_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_endocrin_sys"
+            app:destination="@id/endocrin_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_respiratory_sys"
+            app:destination="@id/respiratory_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_muscle_sys"
+            app:destination="@id/muscle_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_tegumentary_sys"
+            app:destination="@id/tegumentary_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_cardiov_sys"
+            app:destination="@id/cardiov_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_reproducer_sys"
+            app:destination="@id/reproducer_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_nervous_sys"
+            app:destination="@id/nervous_sys" />
+        <action
+            android:id="@+id/action_main_menu_to_fat"
+            app:destination="@id/fat" />
+    </fragment>
+    <fragment
+        android:id="@+id/bone_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.bone_sys"
+        android:label="@string/fragment_name7"
+        tools:layout="@layout/fragment_bone_sys">
+        <action
+            android:id="@+id/action_bone_sys_to_histologicBone"
+            app:destination="@id/histologicBone" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardiov_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.cardiov_sys"
+        android:label="@string/fragment_name3"
+        tools:layout="@layout/fragment_cardiov_sys" >
+        <action
+            android:id="@+id/action_cardiov_sys_to_histologicCardiovascular"
+            app:destination="@id/histologicCardiovascular" />
+    </fragment>
+    <fragment
+        android:id="@+id/conective_epitelial"
+        android:name="ar.com.learnhistology.learnhistology.conective_epitelial"
+        android:label="@string/fragment_name12"
+        tools:layout="@layout/fragment_conective_epitelial" >
+        <action
+            android:id="@+id/action_conective_epitelial_to_epitelialAndConectiveTissue"
+            app:destination="@id/epitelialAndConectiveTissue" />
+    </fragment>
+    <fragment
+        android:id="@+id/dig_sys_fragment"
+        android:name="ar.com.learnhistology.learnhistology.view.dig_sys_fragment"
+        android:label="@string/fragment_name"
+        tools:layout="@layout/fragment_dig_sys" />
+    <fragment
+        android:id="@+id/endocrin_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.endocrin_sys"
+        android:label="@string/fragment_name6"
+        tools:layout="@layout/fragment_endocrin_sys" >
+        <action
+            android:id="@+id/action_endocrin_sys_to_histologicEndocrin"
+            app:destination="@id/histologicEndocrin" />
+    </fragment>
+    <fragment
+        android:id="@+id/eye_ear"
+        android:name="ar.com.learnhistology.learnhistology.view.eye_ear"
+        android:label="@string/fragment_name10"
+        tools:layout="@layout/fragment_eye_ear">
+        <action
+            android:id="@+id/action_eye_ear_to_histologicEyeAndEar"
+            app:destination="@id/histologicEyeAndEar" />
+    </fragment>
+    <fragment
+        android:id="@+id/fat"
+        android:name="ar.com.learnhistology.learnhistology.view.fat"
+        android:label="@string/fragment_name13"
+        tools:layout="@layout/fragment_fat">
+        <action
+            android:id="@+id/action_fat_to_histologicFatCarti"
+            app:destination="@id/histologicFatCarti" />
+    </fragment>
+    <fragment
+        android:id="@+id/linfatic_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.linfatic_sys"
+        android:label="@string/fragment_name5"
+        tools:layout="@layout/fragment_linfatic_sys" >
+        <action
+            android:id="@+id/action_linfatic_sys_to_histologicLinfatic"
+            app:destination="@id/histologicLinfatic" />
+    </fragment>
+    <fragment
+        android:id="@+id/muscle_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.muscle_sys"
+        android:label="@string/fragment_name9"
+        tools:layout="@layout/fragment_muscle_sys" >
+        <action
+            android:id="@+id/action_muscle_sys_to_histologicMuscle"
+            app:destination="@id/histologicMuscle" />
+    </fragment>
+    <fragment
+        android:id="@+id/nervous_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.nervous_sys"
+        android:label="@string/fragment_name4"
+        tools:layout="@layout/fragment_nervous_sys" >
+        <action
+            android:id="@+id/action_nervous_sys_to_histologicNervous"
+            app:destination="@id/histologicNervous" />
+    </fragment>
+    <fragment
+        android:id="@+id/reproducer_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.reproducer_sys"
+        android:label="@string/fragment_name8"
+        tools:layout="@layout/fragment_reproducer_sys" >
+        <action
+            android:id="@+id/action_reproducer_sys_to_histologicReproductor"
+            app:destination="@id/histologicReproductor" />
+    </fragment>
+    <fragment
+        android:id="@+id/respiratory_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.respiratory_sys"
+        android:label="@string/fragment_name2"
+        tools:layout="@layout/fragment_respiratory_sys">
+        <action
+            android:id="@+id/action_respiratory_sys_to_histologic_respiratory"
+            app:destination="@id/histologic_respiratory" />
+    </fragment>
+    <fragment
+        android:id="@+id/tegumentary_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.tegumentary_sys"
+        android:label="@string/fragment_name11"
+        tools:layout="@layout/fragment_tegumentary_sys" >
+        <action
+            android:id="@+id/action_tegumentary_sys_to_histologicTegumentary"
+            app:destination="@id/histologicTegumentary" />
+    </fragment>
+    <fragment
+        android:id="@+id/urinary_sys"
+        android:name="ar.com.learnhistology.learnhistology.view.urinary_sys"
+        android:label="@string/fragment_name14"
+        tools:layout="@layout/fragment_urinary_sys" >
+        <action
+            android:id="@+id/action_urinary_sys_to_histologicUrinary"
+            app:destination="@id/histologicUrinary" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologic_respiratory"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.respiratory.histologic_respiratory"
+        android:label="@string/respiratory_histology"
+        tools:layout="@layout/fragment_histologic_epitelium_conective_tissue">
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/epitelialAndConectiveTissue"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.epitelialAndConective.EpitelialAndConectiveTissue"
+        android:label="@string/epitelial_and_conective_tissue_histology">
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicUrinary"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicUrinary"
+        android:label="HistologicUrinary" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicLinfatic"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicLinfatic"
+        android:label="HistologicLinfatic" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicEyeAndEar"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicEyeAndEar"
+        android:label="HistologicEyeAndEar" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicBone"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicBone"
+        android:label="HistologicBone" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicEndocrin"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicEndocrin"
+        android:label="HistologicEndocrin" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicMuscle"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicMuscle"
+        android:label="HistologicMuscle" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicTegumentary"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicTegumentary"
+        android:label="HistologicTegumentary" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicCardiovascular"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicCardiovascular"
+        android:label="HistologicCardiovascular" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicReproductor"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicReproductor"
+        android:label="HistologicReproductor" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicNervous"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicNervous"
+        android:label="HistologicNervous" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/histologicFatCarti"
+        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicFatCarti"
+        android:label="HistologicFatCarti" >
+        <argument
+            android:name="organ"
+            app:argType="string" />
+    </fragment>
+</navigation>
