@@ -74,4 +74,7 @@
     <string name="alveolo">" Los alveolos son los espacios aéreos terminales del aparato respiratorio y las estructuras en las que se produce el intercambio gaseoso, su pared mide 0.2 mm de diámetro.  Los conductos alveolares son vías aéreas alargadas que casi no tienen paredes sino solo alveolos. En los tabiques hay anillos de ML. Los sacos alveolares son espacios  rodeados por cúmulos de alveolos. Los alveolos circundantes se abren hacia estos espacios. El epitelio alveolar está compuesto por células alveolares tipo 1 que son pavimentosas  planas muy delgadas. Alveolares tipo 2 cubicas, dispersas entre las 1, tienen cuerpos laminares que contienen el surfactante, además son las progenitoras de las alveolares tipo 1,  células en cepillo también en cantidad escasa pero que servirían como receptores para verificar la calidad del aire. "</string>
 
 
+    <string name="Setting">Setting</string>
+    <string name="Dark">Dark mode</string>
+
 </resources>

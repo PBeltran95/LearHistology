@@ -13,7 +13,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_learn"
+        android:src="@drawable/icon_views"
         android:scaleX="2"
         android:scaleY="2"
         app:layout_constraintTop_toTopOf="parent"
