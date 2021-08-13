@@ -12,6 +12,7 @@ import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicCardio
 import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicUrinaryBinding
 import ar.com.learnhistology.learnhistology.view.finalFragments.respiratory.ImageAdapter
 import com.afollestad.viewpagerdots.DotsIndicator
+import com.google.android.gms.ads.AdRequest
 
 class HistologicCardiovascular : Fragment() {
     lateinit var mViewPager: ViewPager
@@ -84,5 +85,11 @@ class HistologicCardiovascular : Fragment() {
                 dots.setDotTintRes(R.color.black)
             }
         }
+        initLoadAds()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 }

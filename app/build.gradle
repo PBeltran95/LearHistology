@@ -61,4 +61,5 @@ dependencies {
     implementation 'com.github.MikeOrtiz:TouchImageView:3.1.0'
     implementation 'com.afollestad:viewpagerdots:1.0.0'
     implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
 }

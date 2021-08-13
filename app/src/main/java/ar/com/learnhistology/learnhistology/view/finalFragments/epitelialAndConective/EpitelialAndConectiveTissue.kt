@@ -12,6 +12,7 @@ import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicEpitel
 import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicRespiratoryBinding
 import ar.com.learnhistology.learnhistology.view.finalFragments.respiratory.ImageAdapter
 import com.afollestad.viewpagerdots.DotsIndicator
+import com.google.android.gms.ads.AdRequest
 
 class EpitelialAndConectiveTissue : Fragment() {
 
@@ -86,6 +87,14 @@ class EpitelialAndConectiveTissue : Fragment() {
                 dots.setDotTintRes(R.color.black)
             }
         }
+        initLoadAds()
     }
+
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
+    }
+
 
 }

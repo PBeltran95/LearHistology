@@ -10,6 +10,7 @@ import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicRespiratoryBinding
 import ar.com.learnhistology.learnhistology.databinding.FragmentRespiratorySysBinding
 import ar.com.learnhistology.learnhistology.main_menuDirections
+import com.google.android.gms.ads.AdRequest
 
 class respiratory_sys : Fragment() {
 
@@ -28,6 +29,13 @@ class respiratory_sys : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         toHistologic()
+        initLoadAds()
+    }
+
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 
     private fun toHistologic() {

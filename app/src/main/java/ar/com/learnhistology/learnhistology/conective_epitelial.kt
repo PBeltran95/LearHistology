@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import ar.com.learnhistology.learnhistology.databinding.FragmentConectiveEpitelialBinding
 import ar.com.learnhistology.learnhistology.databinding.FragmentRespiratorySysBinding
 import ar.com.learnhistology.learnhistology.view.respiratory_sysDirections
+import com.google.android.gms.ads.AdRequest
 
 class conective_epitelial : Fragment() {
 
@@ -27,6 +28,12 @@ class conective_epitelial : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         toHistologic()
+        initLoadAds()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 
     private fun toHistologic() {

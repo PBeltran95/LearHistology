@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.databinding.FragmentBoneSysBinding
 import ar.com.learnhistology.learnhistology.databinding.FragmentUrinarySysBinding
+import com.google.android.gms.ads.AdRequest
 
 class bone_sys : Fragment() {
 
@@ -27,6 +28,12 @@ class bone_sys : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         toHistologic()
+        initLoadAds()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 
     private fun toHistologic() {

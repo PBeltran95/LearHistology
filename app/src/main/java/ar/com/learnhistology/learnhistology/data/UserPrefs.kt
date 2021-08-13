@@ -1,6 +1,7 @@
 package ar.com.learnhistology.learnhistology.data
 
 import android.app.Application
+import com.google.android.gms.ads.MobileAds
 
 class UserPrefs:Application() {
     companion object{
@@ -10,5 +11,9 @@ class UserPrefs:Application() {
     override fun onCreate() {
         super.onCreate()
         preferences = SharedPreferences(applicationContext)
+        MobileAds.initialize(this)
     }
+
+
+
 }

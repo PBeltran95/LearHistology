@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".main_menu">
 
     <ImageView
@@ -562,7 +563,6 @@
         android:id="@+id/card13"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -606,7 +606,6 @@
         android:id="@+id/card14"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -656,8 +655,19 @@
         app:backgroundTint="#EEE"
         app:tint="#E91E63"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

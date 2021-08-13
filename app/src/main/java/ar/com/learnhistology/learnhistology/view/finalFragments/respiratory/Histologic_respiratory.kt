@@ -10,6 +10,7 @@ import androidx.viewpager.widget.ViewPager
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicRespiratoryBinding
 import com.afollestad.viewpagerdots.DotsIndicator
+import com.google.android.gms.ads.AdRequest
 
 class histologic_respiratory : Fragment() {
 
@@ -82,6 +83,12 @@ class histologic_respiratory : Fragment() {
                 dots.setDotTintRes(R.color.black)
             }
         }
+        initLoadAds()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 
 }

@@ -20,13 +20,13 @@
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/drawable/splash_background.xml" value="0.18" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/drawable/states_cb_dark_mode.xml" value="0.3828125" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/histologic/mipmap-anydpi-v26/ic_launcher.xml" value="0.2375" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_bone_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_cardiov_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_conective_epitelial.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_dig_sys.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_endocrin_sys.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_eye_ear.xml" value="0.33" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_endocrin_sys.xml" value="0.25" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_eye_ear.xml" value="0.1" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_fat.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_histologic_bone.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_histologic_cardiovascular.xml" value="0.36666666666666664" />
@@ -41,12 +41,12 @@
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_histologic_respiratory.xml" value="0.33" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_histologic_tegumentary.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_histologic_urinary.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_linfatic_sys.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_linfatic_sys.xml" value="0.1" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_main_menu.xml" value="0.33" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_muscle_sys.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_nervous_sys.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_reproducer_sys.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_respiratory_sys.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_muscle_sys.xml" value="0.1" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_nervous_sys.xml" value="0.1" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_reproducer_sys.xml" value="0.5" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_respiratory_sys.xml" value="0.1" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_tegumentary_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_urinary_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/main_header.xml" value="0.1537037037037037" />
