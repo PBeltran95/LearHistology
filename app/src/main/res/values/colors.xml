@@ -10,4 +10,14 @@
     <color name="orange">#F4511E</color>
     <color name="gray">#454545</color>
 
+
+    <color name="primaryColor2">#b3e5fc</color>
+    <color name="primaryLightColor2">#e6ffff</color>
+    <color name="primaryDarkColor2">#82b3c9</color>
+    <color name="secondaryColor2">#d81b60</color>
+    <color name="secondaryLightColor2">#ff5c8d</color>
+    <color name="secondaryDarkColor2">#a00037</color>
+    <color name="primaryTextColor2">#000000</color>
+    <color name="secondaryTextColor2">#ffffff</color>
+
 </resources>

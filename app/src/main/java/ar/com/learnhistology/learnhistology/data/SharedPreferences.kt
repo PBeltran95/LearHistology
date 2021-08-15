@@ -15,14 +15,4 @@ class SharedPreferences(val context:Context) {
         return storage.getBoolean(SHARED_MODE, false)
     }
 
-
-
-
-
-/*
-    val storage = context.getSharedPreferences("storage", 0)//appSettingPrefs
-
-    val sharedPrefsEdit = storage.edit()
-
-    val isNightModeOn:Boolean = storage.getBoolean("NightMode", false)*/
 }

@@ -84,7 +84,14 @@
         android:id="@+id/dig_sys_fragment"
         android:name="ar.com.learnhistology.learnhistology.view.dig_sys_fragment"
         android:label="@string/fragment_name"
-        tools:layout="@layout/fragment_dig_sys" />
+        tools:layout="@layout/fragment_dig_sys" >
+        <action
+            android:id="@+id/action_dig_sys_fragment_to_histologicUrinary2"
+            app:destination="@id/histologicUrinary" />
+        <argument
+            android:name="button"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/endocrin_sys"
         android:name="ar.com.learnhistology.learnhistology.view.endocrin_sys"
