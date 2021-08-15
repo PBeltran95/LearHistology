@@ -685,7 +685,7 @@
                 android:id="@+id/imgSistem13"
                 android:layout_width="50dp"
                 android:layout_height="0dp"
-                android:src="@drawable/epitelium"
+                android:src="@drawable/epitelio"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 

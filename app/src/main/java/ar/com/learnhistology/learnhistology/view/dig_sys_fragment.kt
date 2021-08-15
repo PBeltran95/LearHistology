@@ -74,36 +74,36 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         binding.bannerMain.loadAd(adRequest)
     }
     fun initEpitelialAdapter(){
-        categoryAdapter = CategoryAdapter(listOf(
-            CategoryModel("1", "Epitelio cubico", R.drawable.epiteliocubico),
-            CategoryModel("2", "Epitelio cilindrico", R.drawable.cilindric),
+        categoryAdapter = CategoryAdapter(listOf(//TODOS
+            CategoryModel("1", "Epitelio cubico", R.drawable.epiteliocubico2),
+            CategoryModel("2", "Epitelio cilindrico", R.drawable.cilindrico),
             CategoryModel("3", "Epitelio estratificado", R.drawable.estratificado)),this)
     }
     fun initFatAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("4", "Tejido adiposo", R.drawable.fat),
             CategoryModel("5", "Cartilago hialino", R.drawable.hialino),
-            CategoryModel("6", "Cartilago Elastico", R.drawable.fibroso),
-            CategoryModel("7", "Cartilago elastico", R.drawable.elastico)),this)
+            CategoryModel("6", "Cartilago fibroso", R.drawable.fibroso2),//sad
+            CategoryModel("7", "Cartilago elastico", R.drawable.elastico2)),this)//asdsa
     }
     fun initDigestiveAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
-            CategoryModel("8", "Lengua", R.drawable.fat),
-            CategoryModel("9", "Glandula parotida", R.drawable.hialino),
-            CategoryModel("10", "Glandula submandibular", R.drawable.fibroso),
-            CategoryModel("11", "Glandula sublingual", R.drawable.fibroso),
-            CategoryModel("12", "Diente y encia", R.drawable.fibroso),
-            CategoryModel("13", "Esofago", R.drawable.fibroso),
-            CategoryModel("14", "Estomago", R.drawable.fibroso),
-            CategoryModel("15", "Duodeno", R.drawable.fibroso),
-            CategoryModel("16", "Yeyuno", R.drawable.fibroso),
-            CategoryModel("17", "Ileon", R.drawable.fibroso),
-            CategoryModel("18", "Colon", R.drawable.fibroso),
-            CategoryModel("19", "Apendice", R.drawable.fibroso),
-            CategoryModel("20", "Conducto anal", R.drawable.fibroso),
-            CategoryModel("21", "Higado", R.drawable.fibroso),
-            CategoryModel("22", "Vesicula Biliar", R.drawable.fibroso),
-            CategoryModel("23", "Pancreas", R.drawable.elastico)),this)
+            CategoryModel("8", "Lengua", R.drawable.lengua),
+            CategoryModel("9", "Glandula parotida", R.drawable.parotida),
+            CategoryModel("10", "Glandula submandibular", R.drawable.parotida),
+            CategoryModel("11", "Glandula sublingual", R.drawable.parotida),
+            CategoryModel("12", "Diente y encia", R.drawable.icon_happy_tooth),
+            CategoryModel("13", "Esofago", R.drawable.esofago),
+            CategoryModel("14", "Estomago", R.drawable.estomago),
+            CategoryModel("15", "Duodeno", R.drawable._044752),
+            CategoryModel("16", "Yeyuno", R.drawable._044752),
+            CategoryModel("17", "Ileon", R.drawable._044752),
+            CategoryModel("18", "Colon", R.drawable.colon),
+            CategoryModel("19", "Apendice", R.drawable.apendice),
+            CategoryModel("20", "Conducto anal", R.drawable.digestivo),
+            CategoryModel("21", "Higado", R.drawable.higado),
+            CategoryModel("22", "Vesicula Biliar", R.drawable.vesicula),
+            CategoryModel("23", "Pancreas", R.drawable.pancreas)),this)
     }
     fun initRespiratoryAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
@@ -158,7 +158,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     fun initUrinaryAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("52", "Riñon", R.drawable.suprarrenal),
-            CategoryModel("53", "Ureter", R.drawable.ureter),
+            CategoryModel("53", "Ureter", R.drawable.ureter2),//asdas
             CategoryModel("54", "Vejiga Urinaria", R.drawable.vejiga),
             CategoryModel("55", "Uretra", R.drawable.uretra)),this)
     }
@@ -170,11 +170,11 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("59", "Cuerpo luteo", R.drawable.cuerpoluteojpg),
             CategoryModel("60", "Cordon espermatico", R.drawable.epididimo),
             CategoryModel("61", "Trompa uterina", R.drawable.trompafalopio),
-            CategoryModel("62", "Cuerpo del pene", R.drawable.pene),
+            CategoryModel("62", "Cuerpo del pene", R.drawable.peneicon2), //asdas
             CategoryModel("63", "Placenta", R.drawable.placenta),
             CategoryModel("64", "Prostata", R.drawable.prostata),
             CategoryModel("65", "Cordon umbilical", R.drawable.cordonumbilical),
-            CategoryModel("66", "Vesicula seminal", R.drawable.vesiculaseminal),
+            CategoryModel("66", "Vesicula seminal", R.drawable.epididimo),//asasda
             CategoryModel("67", "Vagina y vulva", R.drawable.ovario),
             CategoryModel("68", "Pezon", R.drawable.pezon),
             CategoryModel("69", "Glandula mamaria", R.drawable.glandulamamaria)),this)
@@ -182,7 +182,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     fun initMuscleAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("70", "Musculo esqueletico", R.drawable.muscle),
-            CategoryModel("71", "Union musculo tendinosa", R.drawable.tendon),
+            CategoryModel("71", "Union musculo tendinosa", R.drawable.tendon2),//asdasd
             CategoryModel("72", "Union neuromuscular", R.drawable.unionneuromuscular),
             CategoryModel("73", "Musculo cardiaco", R.drawable.musculocardiaco),
             CategoryModel("74", "Musculo liso", R.drawable.liso)),this)
@@ -192,7 +192,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("75", "Segmento anterior del ojo", R.drawable.eye),
             CategoryModel("76", "Esclera, cornea y cristalino", R.drawable.cornea__cristalino),
             CategoryModel("77", "S. posterior del ojo", R.drawable.posterioreye),
-            CategoryModel("78", "Oido", R.drawable.oido),
+            CategoryModel("78", "Oido", R.drawable.oreja),//asdas
             CategoryModel("79", "Organo de corti", R.drawable.organ_of_corti)),this)
     }
     fun initTegumentaryAdapter(){
@@ -219,7 +219,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             //Adiposo y conectivo
             "Tejido adiposo"-> button = "4"
             "Cartilago hialino"-> button = "5"
-            "Cartilago Elastico"-> button = "6"
+            "Cartilago fibroso"-> button = "6"
             "Cartilago elastico"-> button = "7"
 
             //Digestivo
@@ -244,7 +244,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             "Mucosa olfatoria"-> button = "23"
             "Laringe"-> button = "24"
             "Traquea"-> button = "25"
-            "Bronquio"-> button = "26"
+            "Bronquio y bronquiolo"-> button = "26"
             "Bronquiolo terminal y alveolo"-> button = "27"
 
             //Cardiovascular
