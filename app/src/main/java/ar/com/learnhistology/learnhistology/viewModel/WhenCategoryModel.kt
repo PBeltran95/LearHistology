@@ -2,10 +2,10 @@ package ar.com.learnhistology.learnhistology.viewModel
 
 import ar.com.learnhistology.learnhistology.data.CategoryModel
 
-class WhenCategoryModel {
-    fun buttonKey(categoryModel:CategoryModel):String {
+class WhenCategoryModel() {
+    fun getButton(name: String):String {
         var button = ""
-        when (categoryModel.CategoryName) {
+        when (name) {
             //Epitelio
             "Epitelio cubico" -> button = "1"
             "Epitelio cilindrico" -> button = "2"
@@ -119,8 +119,6 @@ class WhenCategoryModel {
             "Glandulas sudoriparas" -> button = "85"
             "Glandulas cebaceas" -> button = "86"
             "Foliculo piloso y uña" -> button = "87"
-
-
         }
         return button
     }
