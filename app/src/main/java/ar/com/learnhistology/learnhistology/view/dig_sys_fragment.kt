@@ -9,7 +9,6 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryModel
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentDigSysBinding
@@ -45,20 +44,20 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initLoadAds()
         when(buttonId){
-            "1" -> initEpitelialAdapter()
-            "2" -> initFatAdapter()
-            "3" -> initDigestiveAdapter()
-            "4" -> initRespiratoryAdapter()
-            "5" -> initCardioAdapter()
-            "6" -> initNervousAdapter()
-            "7" -> initLinfaticAdapter()
-            "8" -> initEndocrinAdapter()
-            "9" -> initBoneAdapter()
-            "10" -> initUrinaryAdapter()
-            "11" -> initReproductorAdapter()
-            "12" -> initMuscleAdapter()
-            "13" -> initEyeAdapter()
-            "14" -> initTegumentaryAdapter()
+            "1" -> initAdapter(CategoryObjects.epithelial)
+            "2" -> initAdapter(CategoryObjects.tejidoAdiposo)
+            "3" -> initAdapter(CategoryObjects.digestive)
+            "4" -> initAdapter(CategoryObjects.respiratory)
+            "5" -> initAdapter(CategoryObjects.cardioVascular)
+            "6" -> initAdapter(CategoryObjects.nervioso)
+            "7" -> initAdapter(CategoryObjects.linfatico)
+            "8" -> initAdapter(CategoryObjects.endocrino)
+            "9" -> initAdapter(CategoryObjects.sistemaOseo)
+            "10" -> initAdapter(CategoryObjects.sisUrinario)
+            "11" -> initAdapter(CategoryObjects.sisReproductor)
+            "12" -> initAdapter(CategoryObjects.muscular)
+            "13" -> initAdapter(CategoryObjects.eyeAndEar)
+            "14" -> initAdapter(CategoryObjects.tegumentary)
         }
 
         linearLayoutManager = LinearLayoutManager(requireContext())
@@ -68,53 +67,12 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             adapter = categoryAdapter
         }
     }
-
-
     private fun initLoadAds() {
         val adRequest = AdRequest.Builder().build()
         binding.bannerMain.loadAd(adRequest)
     }
-    private fun initEpitelialAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.epithelial,this@dig_sys_fragment)
-        }
-    private fun initFatAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.tejidoAdiposo,this)
-    }
-    private fun initDigestiveAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.digestive,this)
-    }
-    private fun initRespiratoryAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.respiratory,this)
-    }
-    private fun initCardioAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.cardioVascular,this)
-    }
-    private fun initNervousAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.nervioso,this)
-    }
-    private fun initLinfaticAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.linfatico,this)
-    }
-    private fun initEndocrinAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.endocrino,this)
-    }
-    private fun initBoneAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.sistemaOseo,this)
-    }
-    private fun initUrinaryAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.sisUrinario,this)
-    }
-    private fun initReproductorAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.sisReproductor,this)
-    }
-    private fun initMuscleAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.muscular,this)
-    }
-    private fun initEyeAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.eyeAndEar,this)
-    }
-    private fun initTegumentaryAdapter(){
-        categoryAdapter = CategoryAdapter(CategoryObjects.tegumentary,this)
+    private fun initAdapter(system:List<CategoryModel>){
+        categoryAdapter = CategoryAdapter(system,this)
     }
 
     override fun onClick(categoryModel: CategoryModel) {
