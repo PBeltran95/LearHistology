@@ -121,4 +121,27 @@ object CategoryObjects {
         CategoryModel("82", "Glandulas sudoriparas", R.drawable.skin),
         CategoryModel("83", "Glandulas cebaceas", R.drawable.sudoripara),
         CategoryModel("84", "Foliculo piloso y uña", R.drawable.skin))
+
+    val questions = listOf(
+        QuestionModel(1, "Cuanto es 2+2", "1", "2","3", "4",  4),
+        QuestionModel(2, "Cuanto es 2+3", "1", "5","3", "4",  2),
+        QuestionModel(3, "Cuanto es 2+4", "6", "2","3", "4",  1),
+        QuestionModel(4, "Cuanto es 2+5", "1", "2","3", "7",  4),
+        QuestionModel(5, "Cuanto es 2+6", "1", "2","8", "4",  3),
+        QuestionModel(6, "Cuanto es 2+2", "1", "2","3", "4",  4),
+        QuestionModel(7, "Cuanto es 2+3", "1", "5","3", "4",  2),
+        QuestionModel(8, "Cuanto es 2+4", "6", "2","3", "4",  1),
+        QuestionModel(9, "Cuanto es 2+5", "1", "2","3", "7",  4),
+        QuestionModel(10, "Cuanto es 2+6", "1", "2","8", "4",  3),
+        QuestionModel(11, "Cuanto es 2+2", "1", "2","3", "4",  4),
+        QuestionModel(12, "Cuanto es 2+3", "1", "5","3", "4",  2),
+        QuestionModel(13, "Cuanto es 2+4", "6", "2","3", "4",  1),
+        QuestionModel(14, "Cuanto es 2+5", "1", "2","3", "7",  4),
+        QuestionModel(15, "Cuanto es 2+6", "1", "2","8", "4",  3),
+        QuestionModel(16, "Cuanto es 2+2", "1", "2","3", "4",  4),
+        QuestionModel(17, "Cuanto es 2+3", "1", "5","3", "4",  2),
+        QuestionModel(18, "Cuanto es 2+4", "6", "2","3", "4",  1),
+        QuestionModel(19, "Cuanto es 2+5", "1", "2","3", "7",  4),
+        QuestionModel(20, "Cuanto es 2+6", "1", "2","8", "4",  3),
+        QuestionModel(21, "", "", "","", "",  3))
 }

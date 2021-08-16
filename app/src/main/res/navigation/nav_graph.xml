@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
+    android:label="@string/quizFragment"
     app:startDestination="@id/main_menu">
 
     <fragment
@@ -19,7 +20,11 @@
             app:popExitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_main_menu_to_quizFragment"
-            app:destination="@id/quizFragment" />
+            app:destination="@id/quizFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
     </fragment>
     <fragment
         android:id="@+id/dig_sys_fragment"
@@ -48,6 +53,19 @@
     <fragment
         android:id="@+id/quizFragment"
         android:name="ar.com.learnhistology.learnhistology.QuizFragment"
-        android:label="fragment_quiz"
-        tools:layout="@layout/fragment_quiz" />
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_realQuizScreen"
+            app:destination="@id/realQuizScreen"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/realQuizScreen"
+        android:name="ar.com.learnhistology.learnhistology.RealQuizScreen"
+        android:label="@string/realQuizName"
+        tools:layout="@layout/fragment_real_quiz_screen" />
 </navigation>
