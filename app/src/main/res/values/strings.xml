@@ -1,25 +1,8 @@
 <resources>
     <string name="app_name">LearnHistology</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="fragment_name">Sistema digestivo</string>
-    <string name="fragment_name2">Sistema respiratorio</string>
-    <string name="fragment_name3">Sistema cardiovascular</string>
-    <string name="fragment_name4">Sistema nervioso</string>
-    <string name="fragment_name5">Sistema linfatico</string>
-    <string name="fragment_name6">Sistema endocrino</string>
-    <string name="fragment_name7">Sistema oseo</string>
-    <string name="fragment_name8">Sistema reproductor</string>
-    <string name="fragment_name9">Sistema muscular</string>
-    <string name="fragment_name10">Oido y ojo</string>
-    <string name="fragment_name11">Sistema tegumentario</string>
-    <string name="fragment_name12">Tejido epitelial y conjuntivo</string>
-    <string name="fragment_name13">Tejido adiposo y cartilaginoso</string>
-    <string name="fragment_name14">Sistema urinario</string>
-
-    <string name="respiratory_histology">Histologia respiratoria</string>
-    <string name="epitelial_and_conective_tissue_histology">Histologia Epitelial y conectiva</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_name">Categoria</string>
+    <string name="histologia">Histologia</string>
 
     <string name="example">La mucosa olfatoria está formada por una membrana epitelial y una lámina
         propia densa. En su capa superficial o epitelial tiene 3 clases de células: las epiteliales,
@@ -76,5 +59,7 @@
 
     <string name="Setting">Setting</string>
     <string name="Dark">Dark mode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

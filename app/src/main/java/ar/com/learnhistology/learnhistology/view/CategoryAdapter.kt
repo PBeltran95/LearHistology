@@ -8,6 +8,9 @@ import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryModel
 import ar.com.learnhistology.learnhistology.databinding.ItemCategoryBinding
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class CategoryAdapter(private val category:List<CategoryModel>, private var listener: OnclickListener):
     RecyclerView.Adapter<CategoryAdapter.CategoryHolder>() {
@@ -31,12 +34,12 @@ class CategoryAdapter(private val category:List<CategoryModel>, private var list
 
 
      inner class CategoryHolder(view: View):RecyclerView.ViewHolder(view){
-         val mBinding = ItemCategoryBinding.bind(view)
+         private val mBinding = ItemCategoryBinding.bind(view)
 
         fun render(category:CategoryModel){
             mBinding.tvCardio1.text = category.CategoryName
             mBinding.tvId.text = category.CategoryId
-            Picasso.get().load(category.CategoryImage).into(mBinding.imgCardio1)
+            Picasso.get().load(category.CategoryImage).resize(50,50).into(mBinding.imgCardio1)
         }
          //el evento de click en la tarjeta
          fun setListener(category: CategoryModel) {

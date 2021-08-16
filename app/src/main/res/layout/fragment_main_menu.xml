@@ -9,22 +9,23 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="@dimen/logoWidth"
+        android:layout_height="@dimen/logoHeight"
+        android:layout_marginStart="@dimen/common_padding_margin"
+        android:layout_marginTop="@dimen/common_padding_margin"
         android:src="@drawable/icon_views"
         android:scaleX="2"
         android:scaleY="2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
 
     <TextView
         android:id="@+id/tvPresentation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="@dimen/common_padding_margin"
         android:fontFamily="casual"
         android:textStyle="bold"
         android:textScaleX="0.7"
@@ -67,7 +68,8 @@
                 android:src="@drawable/digestivo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
@@ -95,7 +97,7 @@
         android:layout_height="50dp"
         android:focusable="true"
         android:clickable="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         app:cardElevation="10dp"
         app:cardCornerRadius="1dp"
         app:layout_constraintStart_toStartOf="@id/card14"
@@ -120,15 +122,16 @@
                 android:src="@drawable/respiratorio"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema respiratorio"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -148,7 +151,7 @@
         android:layout_height="50dp"
         android:focusable="true"
         android:clickable="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         app:cardElevation="10dp"
         app:cardCornerRadius="1dp"
         app:layout_constraintTop_toBottomOf="@id/card"
@@ -174,15 +177,16 @@
                 android:src="@drawable/cardio"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema cardiovascular"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -200,7 +204,7 @@
         android:id="@+id/card4"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -227,15 +231,16 @@
                 android:src="@drawable/nervioso"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema nervioso"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -253,7 +258,7 @@
         android:id="@+id/card5"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -279,15 +284,16 @@
                 android:src="@drawable/linfaticsys"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema linfatico"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -305,7 +311,7 @@
         android:id="@+id/card6"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -331,7 +337,8 @@
                 android:layout_height="0dp"
                 android:src="@drawable/endocrin"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
@@ -339,7 +346,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema endocrino"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -357,7 +364,7 @@
         android:id="@+id/card7"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -382,15 +389,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/images"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema oseo y sanguineo"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -408,7 +416,7 @@
         android:id="@+id/card8"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -434,15 +442,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/urinary"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema urinario"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -460,7 +469,7 @@
         android:id="@+id/card9"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -485,15 +494,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/_565170"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema reproductor"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -511,7 +521,7 @@
         android:id="@+id/card10"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -536,15 +546,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/muscle"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema muscular"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -561,7 +572,7 @@
         android:id="@+id/card11"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -586,15 +597,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/eye"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Oido y ojo"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -612,7 +624,7 @@
         android:id="@+id/card12"
         android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/commin_min_padding_margin"
         android:focusable="true"
         android:clickable="true"
         app:cardElevation="10dp"
@@ -637,15 +649,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/skin"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle12"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Sistema tegumentario"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -694,8 +707,8 @@
                 android:id="@+id/tvTitle13"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Tejido epitelial y conjuntivo"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -739,15 +752,16 @@
                 android:layout_height="0dp"
                 android:src="@drawable/fat"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
 
 
             <TextView
                 android:id="@+id/tvTitle42"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/commin_min_padding_margin"
+                android:layout_marginEnd="@dimen/commin_min_padding_margin"
                 android:text="Tejido adiposo y cartilaginoso"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -762,23 +776,23 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnSearch"
+        android:id="@+id/btnQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_quiz"
-        android:layout_margin="16dp"
-        android:clickable="true"
+        android:layout_margin="@dimen/common_padding_margin"
         app:backgroundTint="#EEE"
         app:tint="#E91E63"
         app:fabSize="mini"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/bannerMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="@dimen/common_padding_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

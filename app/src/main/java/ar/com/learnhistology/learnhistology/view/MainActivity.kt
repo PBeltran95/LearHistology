@@ -1,24 +1,16 @@
 package ar.com.learnhistology.learnhistology.view
 
-import android.app.UiModeManager
 import android.content.ActivityNotFoundException
 import android.content.Intent
-import android.content.SharedPreferences
-import android.content.res.Resources
-import android.graphics.Color
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -68,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.darkMode -> darkMode()
             R.id.lightMode -> lightMode()
-            R.id.language -> Toast.makeText(this, "Esto deberia enviar a la seleccion de lenguaje", Toast.LENGTH_SHORT).show()
+            R.id.language -> Toast.makeText(this, "Aun no disponible", Toast.LENGTH_SHORT).show()
             R.id.share -> shareApp()
             R.id.btnRate -> rateApp()
         }
@@ -113,6 +105,4 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         preferences.saveMode(mode)
     }
-
-
 }

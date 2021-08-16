@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logoWidth">80dp</dimen>
+    <dimen name="logoHeight">52dp</dimen>
+    <dimen name="common_padding_margin">16dp</dimen>
+    <dimen name="commin_min_padding_margin">8dp</dimen>
+</resources>

@@ -17,12 +17,15 @@
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_main_menu_to_quizFragment"
+            app:destination="@id/quizFragment" />
     </fragment>
     <fragment
         android:id="@+id/dig_sys_fragment"
         android:name="ar.com.learnhistology.learnhistology.view.dig_sys_fragment"
         android:label="@string/fragment_name"
-        tools:layout="@layout/fragment_dig_sys" >
+        tools:layout="@layout/fragment_dig_sys">
         <action
             android:id="@+id/action_dig_sys_fragment_to_histologicUrinary2"
             app:destination="@id/histologicUrinary"
@@ -37,9 +40,14 @@
     <fragment
         android:id="@+id/histologicUrinary"
         android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicUrinary"
-        android:label="HistologicUrinary" >
+        android:label="@string/histologia">
         <argument
             android:name="organ"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="ar.com.learnhistology.learnhistology.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
 </navigation>

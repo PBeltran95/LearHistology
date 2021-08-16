@@ -1,9 +1,6 @@
 package ar.com.learnhistology.learnhistology
 
-import android.content.res.Configuration
-import android.net.Uri
 import android.os.Bundle
-import android.view.KeyEvent
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -120,6 +117,10 @@ class main_menu : Fragment() {
             val buttonText = button.text.toString()
             main_menuDirections.actionMainMenuToDigSysFragment(buttonText)
             view?.findNavController()?.navigate(main_menuDirections.actionMainMenuToDigSysFragment(buttonText))
+        }
+        binding.btnQuiz.setOnClickListener {
+            main_menuDirections.actionMainMenuToQuizFragment()
+            view?.findNavController()?.navigate(main_menuDirections.actionMainMenuToQuizFragment())
         }
 
     }

@@ -13,6 +13,11 @@ import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryModel
 import ar.com.learnhistology.learnhistology.databinding.FragmentDigSysBinding
 import com.google.android.gms.ads.AdRequest
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import okhttp3.Dispatcher
 
 class dig_sys_fragment : Fragment(), OnclickListener {
     companion object {
@@ -43,7 +48,6 @@ class dig_sys_fragment : Fragment(), OnclickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initLoadAds()
-
         when(buttonId){
             "1" -> initEpitelialAdapter()
             "2" -> initFatAdapter()
@@ -60,6 +64,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             "13" -> initEyeAdapter()
             "14" -> initTegumentaryAdapter()
         }
+
         linearLayoutManager = LinearLayoutManager(requireContext())
         mGridLayout = GridLayoutManager(requireContext(), 2)
         binding.rvCategory.apply {
@@ -73,20 +78,20 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         val adRequest = AdRequest.Builder().build()
         binding.bannerMain.loadAd(adRequest)
     }
-    fun initEpitelialAdapter(){
+    private fun initEpitelialAdapter(){
         categoryAdapter = CategoryAdapter(listOf(//TODOS
             CategoryModel("1", "Epitelio cubico", R.drawable.epiteliocubico2),
             CategoryModel("2", "Epitelio cilindrico", R.drawable.cilindrico),
-            CategoryModel("3", "Epitelio estratificado", R.drawable.estratificado)),this)
-    }
-    fun initFatAdapter(){
+            CategoryModel("3", "Epitelio estratificado", R.drawable.estratificado)),this@dig_sys_fragment)
+        }
+    private fun initFatAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("4", "Tejido adiposo", R.drawable.fat),
             CategoryModel("5", "Cartilago hialino", R.drawable.hialino),
             CategoryModel("6", "Cartilago fibroso", R.drawable.fibroso2),//sad
             CategoryModel("7", "Cartilago elastico", R.drawable.elastico2)),this)//asdsa
     }
-    fun initDigestiveAdapter(){
+    private fun initDigestiveAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("8", "Lengua", R.drawable.lengua),
             CategoryModel("9", "Glandula parotida", R.drawable.parotida),
@@ -105,7 +110,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("22", "Vesicula Biliar", R.drawable.vesicula),
             CategoryModel("23", "Pancreas", R.drawable.pancreas)),this)
     }
-    fun initRespiratoryAdapter(){
+    private fun initRespiratoryAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("24", "Mucosa olfatoria", R.drawable.bulboolfatorio),
             CategoryModel("25", "Laringe", R.drawable.laringe),
@@ -113,7 +118,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("27", "Bronquio y bronquiolo", R.drawable.bronquio),
             CategoryModel("28", "Bronquiolo terminal y alveolo", R.drawable.alveolo)),this)
     }
-    fun initCardioAdapter(){
+    private fun initCardioAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("29", "Corazon", R.drawable.cardio),
             CategoryModel("30", "Arterias coronarias", R.drawable.coronarias),
@@ -122,7 +127,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("33", "Arteriolas y linfaticos", R.drawable.linfatic),
             CategoryModel("34", "Conducto toracico", R.drawable.conductotoracico)),this)
     }
-    fun initNervousAdapter(){
+    private fun initNervousAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("35", "Nervio Periferico", R.drawable._688310),
             CategoryModel("36", "Perineuro", R.drawable.perineuro),
@@ -131,14 +136,14 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("37", "Cerebelo", R.drawable.cerebelo),
             CategoryModel("38", "Medula espinal", R.drawable.medulaespinal)),this)
     }
-    fun initLinfaticAdapter(){
+    private fun initLinfaticAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("37", "Amigdala palatina", R.drawable.amigdala),
             CategoryModel("38", "Ganglio linfatico", R.drawable.ganglio),
             CategoryModel("39", "Bazo", R.drawable.bazo),
             CategoryModel("40", "Timo", R.drawable.timo)),this)
     }
-    fun initEndocrinAdapter(){
+    private fun initEndocrinAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("41", "Hipofisis", R.drawable.hipotalamo),
             CategoryModel("42", "Glandula pineal", R.drawable.pineal),
@@ -146,7 +151,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("44", "Paratiroides", R.drawable.paratiroides),
             CategoryModel("45", "Suprarrenal", R.drawable.suprarrenal)),this)
     }
-    fun initBoneAdapter(){
+    private fun initBoneAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("46", "Tejido Oseo", R.drawable.images),
             CategoryModel("47", "Osificacion endocondral", R.drawable.endocondral),
@@ -155,14 +160,14 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("50", "Agranulocitos y medula osea", R.drawable.medulaosea),
             CategoryModel("51", "Eritropoyesis y granulopoyesis", R.drawable.eritropoyesis)),this)
     }
-    fun initUrinaryAdapter(){
+    private fun initUrinaryAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("52", "Riñon", R.drawable.suprarrenal),
             CategoryModel("53", "Ureter", R.drawable.ureter2),//asdas
             CategoryModel("54", "Vejiga Urinaria", R.drawable.vejiga),
             CategoryModel("55", "Uretra", R.drawable.uretra)),this)
     }
-    fun initReproductorAdapter(){
+    private fun initReproductorAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("56", "Testiculo", R.drawable.testicuilo),
             CategoryModel("57", "Ovario", R.drawable.ovario),
@@ -179,7 +184,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("68", "Pezon", R.drawable.pezon),
             CategoryModel("69", "Glandula mamaria", R.drawable.glandulamamaria)),this)
     }
-    fun initMuscleAdapter(){
+    private fun initMuscleAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("70", "Musculo esqueletico", R.drawable.muscle),
             CategoryModel("71", "Union musculo tendinosa", R.drawable.tendon2),//asdasd
@@ -187,7 +192,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("73", "Musculo cardiaco", R.drawable.musculocardiaco),
             CategoryModel("74", "Musculo liso", R.drawable.liso)),this)
     }
-    fun initEyeAdapter(){
+    private fun initEyeAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("75", "Segmento anterior del ojo", R.drawable.eye),
             CategoryModel("76", "Esclera, cornea y cristalino", R.drawable.cornea__cristalino),
@@ -195,7 +200,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             CategoryModel("78", "Oido", R.drawable.oreja),//asdas
             CategoryModel("79", "Organo de corti", R.drawable.organ_of_corti)),this)
     }
-    fun initTegumentaryAdapter(){
+    private fun initTegumentaryAdapter(){
         categoryAdapter = CategoryAdapter(listOf(
             CategoryModel("80", "Piel gruesa", R.drawable.piel_gruesa),
             CategoryModel("81", "Piel fina", R.drawable.pielfina),
