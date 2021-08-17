@@ -41,7 +41,7 @@ class RealQuizScreen : Fragment() {
     }
 
     private fun finishQuiz(currentPosition:Int) {
-        if (currentPosition == 21){
+        if (currentPosition == 20){
             binding.tvPresentation.text = "Felicitaciones tu puntaje fue de $score"
             binding.tvQuestion.isVisible = false
             binding.radiogroup.isVisible = false

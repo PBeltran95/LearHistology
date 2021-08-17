@@ -138,13 +138,6 @@ class HistologicUrinary : Fragment() {
         }
         var images= arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
         when (organId) {
-            "Epitelio cubico" -> images = arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
-            "Epitelio cilindrico" -> images = arrayOf(R.drawable.alveolo, R.drawable.cardio, R.drawable.digestivo)
-            "Epitelio estratificado" -> images = arrayOf(R.drawable.eye, R.drawable.fat, R.drawable.bronquio)
-            "Tejido adiposo" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "Cartilago hialino" -> images = arrayOf(R.drawable.alveolo, R.drawable.cardio, R.drawable.digestivo)
-            "Cartilago Elastico" -> images = arrayOf(R.drawable.eye, R.drawable.fat, R.drawable.bronquio)
-            "Cartilago elastico" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
 
             "1" -> images = arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
             "2" -> images = arrayOf(R.drawable.alveolo, R.drawable.cardio, R.drawable.digestivo)

@@ -14,6 +14,10 @@ import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentDigSysBinding
 import ar.com.learnhistology.learnhistology.viewModel.WhenCategoryModel
 import com.google.android.gms.ads.AdRequest
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class dig_sys_fragment : Fragment(), OnclickListener {
     companion object {
@@ -44,36 +48,42 @@ class dig_sys_fragment : Fragment(), OnclickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         initLoadAds()
-        when(buttonId){
-            "1" -> initAdapter(CategoryObjects.epithelial)
-            "2" -> initAdapter(CategoryObjects.tejidoAdiposo)
-            "3" -> initAdapter(CategoryObjects.digestive)
-            "4" -> initAdapter(CategoryObjects.respiratory)
-            "5" -> initAdapter(CategoryObjects.cardioVascular)
-            "6" -> initAdapter(CategoryObjects.nervioso)
-            "7" -> initAdapter(CategoryObjects.linfatico)
-            "8" -> initAdapter(CategoryObjects.endocrino)
-            "9" -> initAdapter(CategoryObjects.sistemaOseo)
-            "10" -> initAdapter(CategoryObjects.sisUrinario)
-            "11" -> initAdapter(CategoryObjects.sisReproductor)
-            "12" -> initAdapter(CategoryObjects.muscular)
-            "13" -> initAdapter(CategoryObjects.eyeAndEar)
-            "14" -> initAdapter(CategoryObjects.tegumentary)
-        }
-
-        linearLayoutManager = LinearLayoutManager(requireContext())
-        mGridLayout = GridLayoutManager(requireContext(), 2)
-        binding.rvCategory.apply {
-            layoutManager = mGridLayout
-            adapter = categoryAdapter
-        }
+        initAdapter(prueba())
     }
+
+     private fun prueba():List<CategoryModel> {
+            var objetoRecuperado = CategoryObjects.epithelial
+            when(buttonId){
+                "1" -> objetoRecuperado = CategoryObjects.epithelial
+                "2" -> objetoRecuperado = CategoryObjects.tejidoAdiposo
+                "3" -> objetoRecuperado = CategoryObjects.digestive
+                "4" -> objetoRecuperado = CategoryObjects.respiratory
+                "5" -> objetoRecuperado = CategoryObjects.cardioVascular
+                "6" -> objetoRecuperado = CategoryObjects.nervioso
+                "7" -> objetoRecuperado = CategoryObjects.linfatico
+                "8" -> objetoRecuperado = CategoryObjects.endocrino
+                "9" -> objetoRecuperado = CategoryObjects.sistemaOseo
+                "10" -> objetoRecuperado = CategoryObjects.sisUrinario
+                "11" -> objetoRecuperado = CategoryObjects.sisReproductor
+                "12" -> objetoRecuperado = CategoryObjects.muscular
+                "13" -> objetoRecuperado = CategoryObjects.eyeAndEar
+                "14" -> objetoRecuperado = CategoryObjects.tegumentary
+            }
+        return objetoRecuperado
+    }
+
     private fun initLoadAds() {
         val adRequest = AdRequest.Builder().build()
         binding.bannerMain.loadAd(adRequest)
     }
     private fun initAdapter(system:List<CategoryModel>){
         categoryAdapter = CategoryAdapter(system,this)
+        linearLayoutManager = LinearLayoutManager(requireContext())
+        mGridLayout = GridLayoutManager(requireContext(), 2)
+        binding.rvCategory.apply {
+            layoutManager = mGridLayout
+            adapter = categoryAdapter
+        }
     }
 
     override fun onClick(categoryModel: CategoryModel) {

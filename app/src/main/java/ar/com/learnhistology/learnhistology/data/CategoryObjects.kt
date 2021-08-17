@@ -6,6 +6,7 @@ import ar.com.learnhistology.learnhistology.view.dig_sys_fragment
 
 object CategoryObjects {
 
+
     val epithelial = listOf(//TODOS
         CategoryModel("1", "Epitelio cubico", R.drawable.epiteliocubico2),
         CategoryModel("2", "Epitelio cilindrico", R.drawable.cilindrico),
