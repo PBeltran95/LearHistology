@@ -57,6 +57,11 @@ class RealQuizScreen : Fragment() {
                 Toast.LENGTH_SHORT).show()
         }else{
             this.currentPosition +=1
+            binding.btnConfirm.isVisible = true
+            binding.option1.isChecked = false
+            binding.option2.isChecked = false
+            binding.option3.isChecked = false
+            binding.option4.isChecked = false
             binding.radiogroup.forEach {
                 (it as RadioButton).apply {
                     if (isChecked){
@@ -76,6 +81,7 @@ class RealQuizScreen : Fragment() {
         binding.btnConfirm.setOnClickListener {
             if (getAnswer() == answer){
                 score += 1
+                binding.btnConfirm.isVisible = false
                 binding.radiogroup.forEach {
                     (it as RadioButton).apply {
                         if (isChecked){

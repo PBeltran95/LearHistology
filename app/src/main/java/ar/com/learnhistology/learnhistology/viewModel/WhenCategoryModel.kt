@@ -2,7 +2,7 @@ package ar.com.learnhistology.learnhistology.viewModel
 
 import ar.com.learnhistology.learnhistology.data.CategoryModel
 
-class WhenCategoryModel() {
+class WhenCategoryModel {
     fun getButton(name: String):String {
         var button = ""
         when (name) {
