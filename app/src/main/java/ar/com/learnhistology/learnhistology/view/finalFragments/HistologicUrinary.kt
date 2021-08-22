@@ -43,18 +43,21 @@ class HistologicUrinary : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val text1 = getString(R.string.example)
-        val text2 = getString(R.string.laringeExample)
-        val text3 = getString(R.string.traquea)
-        val text4 = getString(R.string.Bronquio)
+        val text1 = getString(R.string.epitelios)
+        val text2 = getString(R.string.conectivoLaxo)
+        val text3 = getString(R.string.conectivoDenso)
+        val text4 = getString(R.string.tejidoAdiposo)
+        val text5 = getString(R.string.cartilagoHialino)
+        val text6 = getString(R.string.cartilagoFibroso)
+        val text7 = getString(R.string.cartilagoElastico)
         when (organId) {
-            "1" -> binding.expandTextView.setText(text1)
-            "2" -> binding.expandTextView.setText(text2)
-            "3" -> binding.expandTextView.setText(text3)
-            "4" -> binding.expandTextView.setText(text4)
-            "5" -> binding.expandTextView.setText(text4)
-            "6" -> binding.expandTextView.setText(text4)
-            "7" -> binding.expandTextView.setText(text4)
+            "1" -> binding.expandTextView.text = text1
+            "2" -> binding.expandTextView.text = text2
+            "3" -> binding.expandTextView.text = text3
+            "4" -> binding.expandTextView.text = text4
+            "5" -> binding.expandTextView.text = text5
+            "6" -> binding.expandTextView.text = text6
+            "7" -> binding.expandTextView.text = text7
             "8" -> binding.expandTextView.setText(text1)
             "9" -> binding.expandTextView.setText(text2)
             "10" -> binding.expandTextView.setText(text3)
@@ -138,14 +141,16 @@ class HistologicUrinary : Fragment() {
         }
         var images= arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
         when (organId) {
-
-            "1" -> images = arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
-            "2" -> images = arrayOf(R.drawable.alveolo, R.drawable.cardio, R.drawable.digestivo)
-            "3" -> images = arrayOf(R.drawable.eye, R.drawable.fat, R.drawable.bronquio)
-            "4" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "5" -> images = arrayOf(R.drawable.alveolo, R.drawable.cardio, R.drawable.digestivo)
-            "6" -> images = arrayOf(R.drawable.eye, R.drawable.fat, R.drawable.bronquio)
-            "7" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //Primer seccion
+            "1" -> images = arrayOf(R.drawable.epplano1, R.drawable.epcilindrico2, R.drawable.epestratificado3)
+            "2" -> images = arrayOf(R.drawable.conjuntivo_laxo_irregular, R.drawable.conectivo_fibras_elasticas_colageno)
+            "3" -> images = arrayOf(R.drawable.conectivo_denso_regular, R.drawable.conectivo_denso_irregular)
+            //Adiposo y cartilago
+            "4" -> images = arrayOf(R.drawable.adipocitos, R.drawable.adipocitos2)
+            "5" -> images = arrayOf(R.drawable.cartilago_hialino,R.drawable.cartilago_hialino2)
+            "6" -> images = arrayOf(R.drawable.fibrocartilago1, R.drawable.fibrocartilago2)
+            "7" -> images = arrayOf(R.drawable.cartilago_elastico)
+            //Digestivo
             "8" -> images = arrayOf(R.drawable.eye, R.drawable.fat, R.drawable.bronquio)
             "9" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "10" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
@@ -162,42 +167,61 @@ class HistologicUrinary : Fragment() {
             "21" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "22" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "23" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "24" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "25" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "26" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "27" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "28" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "29" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "30" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "31" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "32" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "33" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "34" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "35" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "36" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "37" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "38" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "39" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
-            "40" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //Respiratorio
+            "24" -> images = arrayOf(R.drawable.mucosa_olfatoria, R.drawable.mucosa_olfatoria_2)
+            "25" -> images = arrayOf(R.drawable.laringe_epiglotis, R.drawable.laringe_epiglotis_2,
+                R.drawable.laringe_vestibulo, R.drawable.laringe_vestibulo_2, R.drawable.laringe_cuerdas_volcales_1,
+                R.drawable.laringe_cuerdas_vocales_2)
+
+            "26" -> images = arrayOf(R.drawable.traquea_1, R.drawable.traquea_2)
+            "27" -> images = arrayOf(R.drawable.bronquio_1, R.drawable.bronquio_2, R.drawable.bronquio_3,
+                R.drawable.bronquiolo, R.drawable.bronquiolo_2)
+
+            "28" -> images = arrayOf(R.drawable.bronquiolo_respiratorio, R.drawable.bronquiolo_respiratorio_2, R.drawable.alveolo_1)
+            //Cardiaco
+            "29" -> images = arrayOf(R.drawable.corazon_epicaridio_1, R.drawable.coraon_epicardio_2,
+                R.drawable.corazon_miocardio, R.drawable.corazon_miocardio_2, R.drawable.corazon_endocardio_1,
+                R.drawable.corazon_endocardio_2)
+
+            "30" -> images = arrayOf(R.drawable.arteria_coronaria)
+            "31" -> images = arrayOf(R.drawable.aorta_, R.drawable.aorta_2, R.drawable.aorta_3_endotelio,
+                R.drawable.aorta_4_adventicia)
+            "32" -> images = arrayOf(R.drawable.arteria_elastica, R.drawable.arteria_muscular,
+                R.drawable.capilar, R.drawable.vena)
+            "33" -> images = arrayOf(R.drawable.arteriola_1, R.drawable.arteriola_linfatico)
+            "34" -> images = arrayOf(R.drawable.conducto_toracico)
+            //Nervioso
+            "35" -> images = arrayOf(R.drawable.nervio_periferico)
+            "36" -> images = arrayOf(R.drawable.perineuro_1)
+            "37" -> images = arrayOf(R.drawable.ganglio_simpatico, R.drawable.ganglio_simpatico_2)
+            "38" -> images = arrayOf(R.drawable.cerebro_1, R.drawable.cerebro_2, R.drawable.cerebro_3, R.drawable.cerebro_4)
+            "39" -> images = arrayOf(R.drawable.cerebelo_1, R.drawable.cerebelo_2)
+            "40" -> images = arrayOf(R.drawable.medula_espinal, R.drawable.medula_espinal2,
+                R.drawable.medula_espinal_3, R.drawable.medula_espinal_4)
+            //Linfatico
             "41" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "42" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "43" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "44" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //endocrino
             "45" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "46" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "47" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "48" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "49" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //sistemaOseo
             "50" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "51" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "52" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "53" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "54" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "55" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //urinario
             "56" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "57" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "58" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "59" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //reproductor
             "60" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "61" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "62" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
@@ -212,20 +236,24 @@ class HistologicUrinary : Fragment() {
             "71" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "72" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "73" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //muscular
             "74" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "75" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "76" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "77" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "78" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //EyeandEar
             "79" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "80" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "81" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "82" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "83" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            //tegumentario
             "84" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "85" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "86" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
             "87" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
+            "88" -> images = arrayOf(R.drawable.bulboolfatorio, R.drawable.bulboolfatorio, R.drawable.bulboolfatorio)
         }
 
 

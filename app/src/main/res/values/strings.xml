@@ -1,34 +1,116 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">LearnHistology</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="fragment_name">Categoria</string>
     <string name="histologia">Histologia</string>
 
-    <string name="example">La mucosa olfatoria está formada por una membrana epitelial y una lámina
-        propia densa. En su capa superficial o epitelial tiene 3 clases de células: las epiteliales,
-        llamadas también células de sostén o sustentaculares, las olfatorias o sensoriales
-        y las basales.Las células olfatorias o sensoriales (neuronas olfativas periféricas) son del
-        tipo de las células nerviosas bipolares con un cuerpo celular y una fibra nerviosa que sale
-        de cada extremo; una de ellas periférica muy corta de conducción sensitiva centrípeta que es
-        la dendrita y, la otra, el axón, que es una prolongación central de conducción centrífuga.
-        Estas células destinadas a recoger las impresiones olorosas transmiten la información
-        sensorial desde el ambiente periférico hasta el sistema nervioso central (SNC). Las finas
-        prolongaciones constituidas por las dendritas ascienden hacia la parte superficial
-        siguiendo las hendiduras que quedan entre las células de sostén y terminan en finísimas
-        fibras llamadas cilios olfativos. Por su parte el axón va desde la membrana epitelial
-        hacia la lámina propia. Los axones en la lámina propia se reúnen para formar haces de
-        fibras nerviosas olfatorias que se extienden hasta el bulbo olfatorio. Estas fibras en
-        su conjunto constituyen el nervio olfatorio. En el bulbo, las fibras del nervio olfatorio
-        terminan en una arborización libre y flexuosa. La terminación de cada fibra queda incluida
-        en una formación redondeada llamada glomérulo olfativo. En esta formación hace sinapsis
-        con la arborización dendrítica de las células mitrales presentes en la zona interna del
-        bulbo. Estas células mitrales, por su parte opuesta, emiten los cilindroejes que avanzan
-        hacia la región posterior del bulbo olfatorio para constituir la cinta olfativa, que se
-        divide en 4 raíces. Cada una de ellas sigue un trayecto especial que la conecta a uno de
-        los 4 centros corticales: calloso, hipocámpico, temporal y orbitario, que representan los
-        centros corticales del olfato. Desde la mucosa nasal las impresiones olfativas se trasladan
-        a la corteza cerebral siguiendo este trayecto nervioso que en su conjunto constituye
-        la vía olfativa</string>
+    <string name="epitelios" tools:ignore="TypographyOther">
+
+        (A)Epitelios simples
+        (B) Corte teñido con Hematoxilina y Eosina que muestra una capa simple de células epiteliales cilíndricas.
+        La superfcie libre de las células epiteliales está expuesta a la luz de la vesícula biliar y la superfcie basal está en contacto con el tejido conjuntivo subyacente.
+        (C) Corte teñido con Hematoxilina y Eosina que muestra
+        la pared del esófago revestida por epitelio escamoso estratifcado.\n\n
+
+
+        La clasifcación tradicional de los epitelios es descriptiva y tiene su fundamento en dos factores: la cantidad de estratos
+        celulares y la forma de las células superfciales. La terminología, por consiguiente, reﬂeja sólo la estructura y no la función.\n\n
+
+
+        Recordar que:
+        Las células epiteliales presentan una polaridad bien definida.
+        Tienen una región apical, una región lateral y una región
+        basal. Cada región posee características bioquímicas específicas. Estas características y la disposición geométrica de las
+        células en el epitelio determinan la polaridad funcional de las
+        tres regiones celulares.
+        La región libre o apical está siempre dirigida hacia la superfcie exterior o luz de una cavidad o conducto cerrados. La
+        región lateral se comunica con células adyacentes y se caracteriza por áreas especializadas de adhesión. La región basal se
+        apoya sobre la membrana basal, y fja la célula al tejido conjuntivo subyacente.\n\n
+
+        Los epitelios simples tienen una sola capa celular de grosor. Son característicos de los sistemas de órganos principalmente
+        encargados del transporte, absorción y secreción, como el intestino, los vasos sanguíneos, las glándulas digestivas y otras glándulas
+        exocrinas y el riñón. Los epitelios estratifcados tienen más de una capa celular de grosor son típicos de las superfcies que están
+        sometidas a estrés de fricción, como la piel, la mucosa de la boca, el esófago y la vagina.</string>
+    
+    <string name="conectivoLaxo" tools:ignore="TypographyOther">
+        Los tejidos conjuntivos laxo y denso irregular constituyen dos de los distintos tipos de tejido conjuntivo. Los otros son los tejidos cartilaginoso, óseo, sanguíneo, adiposo y reticular.
+    El tejido conjuntivo laxo se caracteriza por una proporción relativamente alta de
+    células en una matriz de fbras de colágeno delgadas y escasas.  Las células normalmente asociadas con el tejido conjuntivo laxo son los fbroblastos (células
+    productoras del colágeno), las células que integran el sistema inmunitario y las del sistema de defensa general del organismo. Por lo
+    tanto, en el tejido conjuntivo laxo, existen cantidades variables de linfocitos, macrófagos, eosinóflos, células plasmáticas y mastocitos.\n\n
+    (C)Fibras de colageno----(E)Fibras de Elastina
+    </string>
+
+    <string name="conectivoDenso">
+        El tejido conjuntivo denso regular se distingue porque sus fbras están agrupadas muy juntas y organizadas en haces o fascículos
+        paralelos. Las fbrillas de colágeno que componen las fbras también están ordenadas en disposición paralela. Los tendones, que
+        unen los músculos a los huesos y los ligamentos, que unen los huesos entre sí, son ejemplos de este tipo de tejido. Los ligamentos se
+        parecen a los tendones en casi todos los aspectos, pero sus fbras y la disposición de los fascículos tienden a ser menos ordenados.
+        \n\n
+        (Ept)Epitendon (Ent)Endotendon (TF)Fasciculo tendinoso\n\n
+        El tejido conjuntivo denso irregular contiene pocas células,
+        la mayoría de las cuales son los fbroblastos responsables de la formación y del mantenimiento de las fbras de colágeno abundantes
+        que conforman la matriz de este tejido.
+        \n\n
+         (X)Las fbrillas de colágeno fliformes se agrupan en algunas regiones
+    </string>
+    
+    <string name="cartilagoHialino">El tejido cartilaginoso es una forma sólida, forme y un tanto maleable de
+        tejido conjuntivo compuesta por condrocitos y una matriz extracelular
+        muy especializada (comprende el 95 % del volumen del cartílago).
+        Los condrocitos se alojan dentro de lagunas rodeadas por la matriz extracelular.
+        El cartílago es una estructura avascular; por esta razón, la composición
+        de la matriz extracelular es decisiva para la difusión de sustancias entre
+        los condrocitos y los vasos sanguíneos del tejido conjuntivo circundante. \n\n
+        El cartílago hialino es el más común de las tres variedades histológicas. Las vías respiratorias
+        son buen sitio para estudiarlo, como en este corte de tráquea. Observe que la forma de las células
+        cartilaginosas mas periféricas es alargada(condroblastos), mientras que las más redondeadas
+        son condrocitos. Recordar que: que se caracteriza por una matriz que
+        contiene fibras de colágeno tipo II, GAG, proteoglucanos
+        y glucoproteínas multiadhesivas.
+
+    </string>
+    <string name="cartilagoElastico">
+        El cartílago elástico tiene una matriz que contiene fbras elásticas y
+        láminas elásticas además de colágeno tipo II y otros componentes que se
+         encuentran en la matriz extracelular del cartílago hialino. Se encuentra
+        en el pabellón auricular, en la tuba de Eustaquio, en
+        la epiglotis y en otras partes de la laringe. El material elástico imparte
+        propiedades de elasticidad, a diferencia de la resistencia, que
+        no se comparten con el cartílago hialino. El cartílago elástico está
+        rodeado por pericondrio, y también aumenta de tamaño por el crecimiento
+        tanto intersticial como por aposición. A diferencia del cartílago hialino,
+        sin embargo, el cartílago elástico no sufre normalmente
+        el proceso de calcifcación.
+    </string>
+    <string name="cartilagoFibroso">
+        El cartílago fibroso o fbrocartílago es una combinación de tejido
+         conjuntivo denso irregular y tejido cartilaginoso. Tiene una matriz
+        con haces gruesos de colágeno tipo I además de colágeno tipo II.
+         La cantidad de cartílago varia, pero en la mayoría de los sitios, las
+        células cartilaginosas y su matriz ocupan una porción menor de la masa hística.
+        El fibrocartílago se encuentra en los discos intervertebrales, la sínfsis del pubis,
+        la articulación de la rodilla, la articulación temporomandibular, la articulación esternoclavicular y
+        la articulación glenohumeral. También puede estar presente a lo largo de las correderas o inserciones de
+        tendones y ligamentos. Su presencia se asocia con los sitios donde se requiere
+        cierto grado de elasticidad en el tejido conjuntivo
+        denso para ayudar a absorber
+        el impacto físico repentino.
+    </string>
+    <string name="tejidoAdiposo">
+        Corte de tejido adiposo en donde la grasa se perdió durante el
+        procesamiento histológico y por eso quedan huecos blancos.\n
+        Sin embargo, cada adipocito contiene en el interior de su
+        citoplasma con una gotita de grasa. \n\n
+        Recordar: Los adipocitos blancos son células muy grandes (con un diámetro de 100µm o más) con una sola gota lipídica (unilocular)
+        grande, un borde citoplasmático delgado y un núcleo aplanado y
+        desplazado hacia la periferia.
+        Una gotita lipídica única, dentro del adipocito blanco, representa
+        una inclusión citoplasmática y no está unida a membrana.
+        Los adipocitos blancos secretan una variedad de adipocinas, que
+        incluyen hormonas (p. ej., leptina), factores de crecimiento y citosinas.
+
+    </string>
 
     <string name="laringeExample">Es una estructura hueca de 4-5 cm de largo, que comunica la
             faringe con la tráquea. • Está compuesta por un esqueleto cartilaginoso articulado •
