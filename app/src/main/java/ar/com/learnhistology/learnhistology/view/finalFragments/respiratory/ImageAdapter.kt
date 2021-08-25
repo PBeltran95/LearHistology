@@ -33,6 +33,10 @@ class ImageAdapter(private val mContext: Context, private val images:Array<Int>)
 
         return mImageView*/
         return TouchImageView(container.context).apply {
+            setMaxZoomRatio(2.0F)
+            canScrollHorizontally(-100)
+            canScrollHorizontally(100)
+            setScrollPosition(0.1F,1F)
             setImageResource(mImageArray[position])
             container.addView(this, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT)
         }
@@ -41,6 +45,4 @@ class ImageAdapter(private val mContext: Context, private val images:Array<Int>)
     override fun destroyItem(container: ViewGroup, position: Int, any: Any) {
         container.removeView(any as View?)
     }
-
-
 }

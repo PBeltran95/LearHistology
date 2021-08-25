@@ -96,8 +96,8 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("68", "Prostata", R.drawable.prostata),
         CategoryModel("69", "Cordon umbilical", R.drawable.cordonumbilical),
         CategoryModel("70", "Vesicula seminal", R.drawable.epididimo),//asasda
-        CategoryModel("71", "Vagina y vulva", R.drawable.ovario),
-        CategoryModel("72", "Pezon", R.drawable.pezon),
+        CategoryModel("71", "Útero 1", R.drawable.ovario),
+        CategoryModel("72", "Útero 2", R.drawable.trompafalopio),
         CategoryModel("73", "Glandula mamaria", R.drawable.glandulamamaria))
 
     val muscular = listOf(

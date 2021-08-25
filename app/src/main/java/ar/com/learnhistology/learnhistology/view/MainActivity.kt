@@ -105,4 +105,5 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         preferences.saveMode(mode)
     }
+
 }

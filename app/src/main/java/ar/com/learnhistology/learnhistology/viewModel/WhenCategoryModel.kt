@@ -95,8 +95,8 @@ class WhenCategoryModel {
             "Prostata" -> button = "68"
             "Cordon umbilical" -> button = "69"
             "Vesicula seminal" -> button = "70"
-            "Vagina y vulva" -> button = "71"
-            "Pezon" -> button = "72"
+            "Útero 1" -> button = "71"
+            "Útero 2" -> button = "72"
             "Glandula mamaria" -> button = "73"
 
             //Muscular
