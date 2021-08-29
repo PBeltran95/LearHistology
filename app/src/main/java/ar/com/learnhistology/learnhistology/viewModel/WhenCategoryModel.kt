@@ -88,7 +88,7 @@ class WhenCategoryModel {
             "Ovario" -> button = "61"
             "Epididimo y conductillos" -> button = "62"
             "Cuerpo luteo" -> button = "63"
-            "Cordon espermatico" -> button = "64"
+            "Cordon espermatico" -> button = "64" //CAMBIAR EL CORDON ESPERMATICO POR CONDUCTO DEFERENTE
             "Trompa uterina" -> button = "65"
             "Cuerpo del pene" -> button = "66"
             "Placenta" -> button = "67"

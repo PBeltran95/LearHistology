@@ -46,10 +46,98 @@ class HistologicUrinary : Fragment() {
         val text1 = getString(R.string.epitelios)
         val text2 = getString(R.string.conectivoLaxo)
         val text3 = getString(R.string.conectivoDenso)
+
         val text4 = getString(R.string.tejidoAdiposo)
         val text5 = getString(R.string.cartilagoHialino)
         val text6 = getString(R.string.cartilagoFibroso)
         val text7 = getString(R.string.cartilagoElastico)
+
+        val text8 = getString(R.string.lengua)
+        val text9 = getString(R.string.glandulas_salivales)
+        val text10 = getString(R.string.glandulas_salivales)
+        val text11 = getString(R.string.glandulas_salivales)
+        val text12 = getString(R.string.diente)
+        val text13 = getString(R.string.esofago)
+        val text14 = getString(R.string.estomago)
+        val text15 = getString(R.string.duodeno)
+        val text16 = getString(R.string.yeyuno)
+        val text17 = getString(R.string.ileon)
+        val text18 = getString(R.string.colon)
+        val text19 = getString(R.string.apendice)
+        val text20 = getString(R.string.cond_anal)
+        val text21 = getString(R.string.higado)
+        val text22 = getString(R.string.vesicula_biliar)
+        val text23 = getString(R.string.pancreas)
+        val text24 = getString(R.string.mucosa_olfatoria)
+        val text25 = getString(R.string.laringe)
+        val text26 = getString(R.string.traquea)
+        val text27 = getString(R.string.bronquio_bronquiolo)
+        val text28 = getString(R.string.alveolo)
+        val text29 = getString(R.string.corazon)
+        val text30 = getString(R.string.coronaria)
+        val text31 = getString(R.string.aorta)
+        val text32 = getString(R.string.arterias_venas)
+        val text33 = getString(R.string.linfaticos)
+        val text34 = getString(R.string.conducto_toracico)
+        val text35 = getString(R.string.nervio_periferico)
+        val text36 = getString(R.string.perineuro)
+        val text37 = getString(R.string.ganglios_simpaticos)
+        val text38 = getString(R.string.cerebro)
+        val text39 = getString(R.string.cerebelo)
+        val text40 = getString(R.string.medula_espinal)
+        val text41 = getString(R.string.amigdala_palatina)
+        val text42 = getString(R.string.ganglio_linfatico)
+        val text43 = getString(R.string.bazo)
+        val text44 = getString(R.string.timo)
+        val text45 = getString(R.string.hipofisis)
+        val text46 = getString(R.string.glandula_pineal)
+        val text47 = getString(R.string.tiroides)
+        val text48 = getString(R.string.paratiroides)
+        val text49 = getString(R.string.suprarrenal)
+
+        val text50 = getString(R.string.tejido_oseo)
+        val text51 = getString(R.string.osificacion_endocondral)
+        val text52 = getString(R.string.osificacion_intramembranosoa)
+        val text53 = getString(R.string.eritrocitos_granulocitos)
+        val text54 = getString(R.string.agranulocitos_medula_osea)
+        val text55 = getString(R.string.eritropoyesis_granulopoyesis)
+
+        val text56 = getString(R.string.kidney)
+        val text57 = getString(R.string.ureter)
+        val text58 = getString(R.string.vejiga)
+        val text59 = getString(R.string.uretra)
+
+        val text60 = getString(R.string.testiculo)
+        val text61 = getString(R.string.ovario)
+        val text62 = getString(R.string.epididimo)
+        val text63 = getString(R.string.cuerpo_luteo)
+        val text64 = getString(R.string.conducto_deferente)
+        val text65 = getString(R.string.trompa_uterina)
+        val text66 = getString(R.string.cuerpo_del_pene)
+        val text67 = getString(R.string.placenta)
+        val text68 = getString(R.string.prostata)
+        val text69 = getString(R.string.cordon_umbilical)
+        val text70 = getString(R.string.vesiculas_seminales)
+        val text71 = getString(R.string.utero1)
+        val text72 = getString(R.string.utero2)
+        val text73 = getString(R.string.glandula_mamaria)
+
+        val text74 = getString(R.string.musculo_esqueletico)
+        val text75 = getString(R.string.union_musculo_tendinosa)
+        val text76 = getString(R.string.union_neuromuscular)
+        val text77 = getString(R.string.musculo_cardiaco)
+        val text78 = getString(R.string.musculo_liso)
+
+        val text79 = getString(R.string.anterior_ojo)
+        val text80 = getString(R.string.esclera_cornea_cristalino)
+        val text81 = getString(R.string.posterior_del_ojo)
+        val text82 = getString(R.string.oido)
+        val text83 = getString(R.string.organo_corti)
+        val text84 = getString(R.string.piel_gruesa)
+        val text85 = getString(R.string.piel_fina)
+        val text86 = getString(R.string.sudoriparas)
+        val text87 = getString(R.string.cebaceas)
+        val text88 = getString(R.string.foliculo_piloso)
         when (organId) {
             "1" -> binding.expandTextView.text = text1
             "2" -> binding.expandTextView.text = text2
@@ -58,86 +146,87 @@ class HistologicUrinary : Fragment() {
             "5" -> binding.expandTextView.text = text5
             "6" -> binding.expandTextView.text = text6
             "7" -> binding.expandTextView.text = text7
-            "8" -> binding.expandTextView.setText(text1)
-            "9" -> binding.expandTextView.setText(text2)
-            "10" -> binding.expandTextView.setText(text3)
-            "11" -> binding.expandTextView.setText(text4)
-            "12" -> binding.expandTextView.setText(text4)
-            "13" -> binding.expandTextView.setText(text4)
-            "14" -> binding.expandTextView.setText(text4)
-            "15" -> binding.expandTextView.setText(text4)
-            "16" -> binding.expandTextView.setText(text4)
-            "17" -> binding.expandTextView.setText(text4)
-            "18" -> binding.expandTextView.setText(text1)
-            "19" -> binding.expandTextView.setText(text2)
-            "20" -> binding.expandTextView.setText(text3)
-            "21" -> binding.expandTextView.setText(text4)
-            "22" -> binding.expandTextView.setText(text4)
-            "23" -> binding.expandTextView.setText(text4)
-            "24" -> binding.expandTextView.setText(text4)
-            "25" -> binding.expandTextView.setText(text4)
-            "26" -> binding.expandTextView.setText(text4)
-            "27" -> binding.expandTextView.setText(text4)
-            "28" -> binding.expandTextView.setText(text1)
-            "29" -> binding.expandTextView.setText(text2)
-            "30" -> binding.expandTextView.setText(text3)
-            "31" -> binding.expandTextView.setText(text4)
-            "32" -> binding.expandTextView.setText(text4)
-            "33" -> binding.expandTextView.setText(text4)
-            "34" -> binding.expandTextView.setText(text4)
-            "35" -> binding.expandTextView.setText(text4)
-            "36" -> binding.expandTextView.setText(text4)
-            "37" -> binding.expandTextView.setText(text4)
-            "38" -> binding.expandTextView.setText(text1)
-            "39" -> binding.expandTextView.setText(text2)
-            "40" -> binding.expandTextView.setText(text3)
-            "41" -> binding.expandTextView.setText(text4)
-            "42" -> binding.expandTextView.setText(text4)
-            "43" -> binding.expandTextView.setText(text4)
-            "44" -> binding.expandTextView.setText(text4)
-            "45" -> binding.expandTextView.setText(text4)
-            "46" -> binding.expandTextView.setText(text4)
-            "47" -> binding.expandTextView.setText(text4)
-            "48" -> binding.expandTextView.setText(text1)
-            "49" -> binding.expandTextView.setText(text2)
-            "50" -> binding.expandTextView.setText(text3)
-            "51" -> binding.expandTextView.setText(text4)
-            "52" -> binding.expandTextView.setText(text4)
-            "53" -> binding.expandTextView.setText(text4)
-            "54" -> binding.expandTextView.setText(text4)
-            "55" -> binding.expandTextView.setText(text4)
-            "56" -> binding.expandTextView.setText(text4)
-            "57" -> binding.expandTextView.setText(text4)
-            "58" -> binding.expandTextView.setText(text1)
-            "59" -> binding.expandTextView.setText(text2)
-            "60" -> binding.expandTextView.setText(text3)
-            "61" -> binding.expandTextView.setText(text4)
-            "62" -> binding.expandTextView.setText(text4)
-            "63" -> binding.expandTextView.setText(text4)
-            "64" -> binding.expandTextView.setText(text4)
-            "65" -> binding.expandTextView.setText(text4)
-            "66" -> binding.expandTextView.setText(text4)
-            "67" -> binding.expandTextView.setText(text4)
-            "68" -> binding.expandTextView.setText(text1)
-            "69" -> binding.expandTextView.setText(text2)
-            "70" -> binding.expandTextView.setText(text3)
-            "71" -> binding.expandTextView.setText(text4)
-            "72" -> binding.expandTextView.setText(text4)
-            "73" -> binding.expandTextView.setText(text4)
-            "74" -> binding.expandTextView.setText(text4)
-            "75" -> binding.expandTextView.setText(text4)
-            "76" -> binding.expandTextView.setText(text4)
-            "77" -> binding.expandTextView.setText(text4)
-            "78" -> binding.expandTextView.setText(text1)
-            "79" -> binding.expandTextView.setText(text2)
-            "80" -> binding.expandTextView.setText(text3)
-            "81" -> binding.expandTextView.setText(text4)
-            "82" -> binding.expandTextView.setText(text4)
-            "83" -> binding.expandTextView.setText(text4)
-            "84" -> binding.expandTextView.setText(text4)
-            "85" -> binding.expandTextView.setText(text4)
-            "86" -> binding.expandTextView.setText(text4)
-            "87" -> binding.expandTextView.setText(text4)
+            "8" -> binding.expandTextView.text = text8
+            "9" -> binding.expandTextView.text = text9
+            "10" -> binding.expandTextView.text = text10
+            "11" -> binding.expandTextView.text = text11
+            "12" -> binding.expandTextView.text = text12
+            "13" -> binding.expandTextView.text = text13
+            "14" -> binding.expandTextView.text = text14
+            "15" -> binding.expandTextView.text = text15
+            "16" -> binding.expandTextView.text = text16
+            "17" -> binding.expandTextView.text = text17
+            "18" -> binding.expandTextView.text = text18
+            "19" -> binding.expandTextView.text = text19
+            "20" -> binding.expandTextView.text = text20
+            "21" -> binding.expandTextView.text = text21
+            "22" -> binding.expandTextView.text = text22
+            "23" -> binding.expandTextView.text = text23
+            "24" -> binding.expandTextView.text = text24
+            "25" -> binding.expandTextView.text = text25
+            "26" -> binding.expandTextView.text = text26
+            "27" -> binding.expandTextView.text = text27
+            "28" -> binding.expandTextView.text = text28
+            "29" -> binding.expandTextView.text = text29
+            "30" -> binding.expandTextView.text = text30
+            "31" -> binding.expandTextView.text = text31
+            "32" -> binding.expandTextView.text = text32
+            "33" -> binding.expandTextView.text = text33
+            "34" -> binding.expandTextView.text = text34
+            "35" -> binding.expandTextView.text = text35
+            "36" -> binding.expandTextView.text = text36
+            "37" -> binding.expandTextView.text = text37
+            "38" -> binding.expandTextView.text = text38
+            "39" -> binding.expandTextView.text = text39
+            "40" -> binding.expandTextView.text = text40
+            "41" -> binding.expandTextView.text = text41
+            "42" -> binding.expandTextView.text = text42
+            "43" -> binding.expandTextView.text = text43
+            "44" -> binding.expandTextView.text = text44
+            "45" -> binding.expandTextView.text = text45
+            "46" -> binding.expandTextView.text = text46
+            "47" -> binding.expandTextView.text = text47
+            "48" -> binding.expandTextView.text = text48
+            "49" -> binding.expandTextView.text = text49
+            "50" -> binding.expandTextView.text = text50
+            "51" -> binding.expandTextView.text = text51
+            "52" -> binding.expandTextView.text = text52
+            "53" -> binding.expandTextView.text = text53
+            "54" -> binding.expandTextView.text = text54
+            "55" -> binding.expandTextView.text = text55
+            "56" -> binding.expandTextView.text = text56
+            "57" -> binding.expandTextView.text = text57
+            "58" -> binding.expandTextView.text = text58
+            "59" -> binding.expandTextView.text = text59
+            "60" -> binding.expandTextView.text = text60
+            "61" -> binding.expandTextView.text = text61
+            "62" -> binding.expandTextView.text = text62
+            "63" -> binding.expandTextView.text = text63
+            "64" -> binding.expandTextView.text = text64
+            "65" -> binding.expandTextView.text = text65
+            "66" -> binding.expandTextView.text = text66
+            "67" -> binding.expandTextView.text = text67
+            "68" -> binding.expandTextView.text = text68
+            "69" -> binding.expandTextView.text = text69
+            "70" -> binding.expandTextView.text = text70
+            "71" -> binding.expandTextView.text = text71
+            "72" -> binding.expandTextView.text = text72
+            "73" -> binding.expandTextView.text = text73
+            "74" -> binding.expandTextView.text = text74
+            "75" -> binding.expandTextView.text = text75
+            "76" -> binding.expandTextView.text = text76
+            "77" -> binding.expandTextView.text = text77
+            "78" -> binding.expandTextView.text = text78
+            "79" -> binding.expandTextView.text = text79
+            "80" -> binding.expandTextView.text = text80
+            "81" -> binding.expandTextView.text = text81
+            "82" -> binding.expandTextView.text = text82
+            "83" -> binding.expandTextView.text = text83
+            "84" -> binding.expandTextView.text = text84
+            "85" -> binding.expandTextView.text = text85
+            "86" -> binding.expandTextView.text = text86
+            "87" -> binding.expandTextView.text = text87
+            "88" -> binding.expandTextView.text = text88
         }
         var images= arrayOf(R.drawable.epitelio, R.drawable.urinary, R.drawable.endocrin)
         when (organId) {
@@ -151,7 +240,7 @@ class HistologicUrinary : Fragment() {
             "6" -> images = arrayOf(R.drawable.fibrocartilago1, R.drawable.fibrocartilago2)
             "7" -> images = arrayOf(R.drawable.cartilago_elastico)
             //Digestivo
-            "8" -> images = arrayOf(R.drawable.lengua_1, R.drawable.lengua_2, R.drawable.lengua_3, R.drawable.lengua_4)
+            "8" -> images = arrayOf(R.drawable.papilas,R.drawable.lengua_1, R.drawable.lengua_2, R.drawable.lengua_3, R.drawable.lengua_4)
             "9" -> images = arrayOf(R.drawable.glandulaparotida, R.drawable.glandulaparotida2)
             "10" -> images = arrayOf(R.drawable.glandulasubmandibular, R.drawable.glandulasubmandibular2)
             "11" -> images = arrayOf(R.drawable.glandula_sublingual_1, R.drawable.glandula_sublingual2)
@@ -288,8 +377,7 @@ class HistologicUrinary : Fragment() {
 //Aca se configuran y se condicionan de que color van los puntos del viewPager
         val dots: DotsIndicator = binding.dots
         dots.attachViewPager(mViewPager)
-        val mode = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
-        when (mode) {
+        when (context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
             Configuration.UI_MODE_NIGHT_YES -> {
                 dots.setDotTintRes(R.color.white)
             }
