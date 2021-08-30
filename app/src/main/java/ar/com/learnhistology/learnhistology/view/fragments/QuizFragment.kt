@@ -1,4 +1,4 @@
-package ar.com.learnhistology.learnhistology
+package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

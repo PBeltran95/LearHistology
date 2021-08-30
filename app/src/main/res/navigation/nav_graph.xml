@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/main_menu"
-        android:name="ar.com.learnhistology.learnhistology.main_menu"
+        android:name="ar.com.learnhistology.learnhistology.view.fragments.main_menu"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_main_menu">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/dig_sys_fragment"
-        android:name="ar.com.learnhistology.learnhistology.view.dig_sys_fragment"
+        android:name="ar.com.learnhistology.learnhistology.view.fragments.dig_sys_fragment"
         android:label="@string/fragment_name"
         tools:layout="@layout/fragment_dig_sys">
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/histologicUrinary"
-        android:name="ar.com.learnhistology.learnhistology.view.finalFragments.HistologicUrinary"
+        android:name="ar.com.learnhistology.learnhistology.view.fragments.HistologicUrinary"
         android:label="@string/histologia">
         <argument
             android:name="organ"
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="ar.com.learnhistology.learnhistology.QuizFragment"
+        android:name="ar.com.learnhistology.learnhistology.view.fragments.QuizFragment"
         android:label="Quiz"
         tools:layout="@layout/fragment_quiz" >
         <action
@@ -65,7 +65,7 @@
     </fragment>
     <fragment
         android:id="@+id/realQuizScreen"
-        android:name="ar.com.learnhistology.learnhistology.RealQuizScreen"
+        android:name="ar.com.learnhistology.learnhistology.view.fragments.RealQuizScreen"
         android:label="@string/realQuizName"
         tools:layout="@layout/fragment_real_quiz_screen" />
 </navigation>

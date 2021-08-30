@@ -1,4 +1,4 @@
-package ar.com.learnhistology.learnhistology.view.finalFragments
+package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.ViewPager
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicUrinaryBinding
-import ar.com.learnhistology.learnhistology.view.finalFragments.respiratory.ImageAdapter
+import ar.com.learnhistology.learnhistology.view.adapters.ImageAdapter
 import com.afollestad.viewpagerdots.DotsIndicator
 import com.google.android.gms.ads.AdRequest
 

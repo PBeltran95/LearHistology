@@ -1,4 +1,4 @@
-package ar.com.learnhistology.learnhistology.view
+package ar.com.learnhistology.learnhistology.view.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ar.com.learnhistology.learnhistology.R
-import ar.com.learnhistology.learnhistology.data.CategoryModel
+import ar.com.learnhistology.learnhistology.data.models.CategoryModel
 import ar.com.learnhistology.learnhistology.databinding.ItemCategoryBinding
+import ar.com.learnhistology.learnhistology.view.OnclickListener
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 
@@ -36,7 +37,7 @@ class CategoryAdapter(private val category:List<CategoryModel>, private var list
      inner class CategoryHolder(view: View):RecyclerView.ViewHolder(view){
          private val mBinding = ItemCategoryBinding.bind(view)
 
-        fun render(category:CategoryModel){
+        fun render(category: CategoryModel){
             mBinding.tvCardio1.text = category.CategoryName
             mBinding.tvId.text = category.CategoryId
             Glide.with(context)

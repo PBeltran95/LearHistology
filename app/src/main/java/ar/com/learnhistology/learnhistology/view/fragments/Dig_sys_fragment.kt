@@ -1,18 +1,19 @@
-package ar.com.learnhistology.learnhistology.view
+package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ar.com.learnhistology.learnhistology.data.CategoryModel
+import ar.com.learnhistology.learnhistology.data.models.CategoryModel
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentDigSysBinding
+import ar.com.learnhistology.learnhistology.view.OnclickListener
+import ar.com.learnhistology.learnhistology.view.adapters.CategoryAdapter
 import ar.com.learnhistology.learnhistology.viewModel.WhenCategoryModel
 import com.google.android.gms.ads.AdRequest
 import kotlinx.coroutines.*

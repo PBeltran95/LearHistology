@@ -1,20 +1,24 @@
 package ar.com.learnhistology.learnhistology.data
 
 import ar.com.learnhistology.learnhistology.R
+import ar.com.learnhistology.learnhistology.data.models.CategoryModel
+import ar.com.learnhistology.learnhistology.data.models.QuestionModel
 
- object CategoryObjects {
+object CategoryObjects {
 
 
     val epithelial = listOf(//Implementar Room para que cada objeto venga de una DB
         CategoryModel("1", "Epitelios", R.drawable.epiteliocubico2),
         CategoryModel("2", "Tejido conectivo laxo", R.drawable.conectivo_icon),
-        CategoryModel("3", "Tejido conectivo denso", R.drawable.denso))
+        CategoryModel("3", "Tejido conectivo denso", R.drawable.denso)
+    )
 
     val tejidoAdiposo = listOf(
         CategoryModel("4", "Tejido adiposo", R.drawable.fat),
         CategoryModel("5", "Cartilago hialino", R.drawable.hialino),
         CategoryModel("6", "Cartilago fibroso", R.drawable.fibroso2),//sad
-        CategoryModel("7", "Cartilago elastico", R.drawable.elastico2))
+        CategoryModel("7", "Cartilago elastico", R.drawable.elastico2)
+    )
 
     val digestive = listOf(
         CategoryModel("8", "Lengua", R.drawable.lengua),
@@ -32,14 +36,16 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("20", "Conducto anal", R.drawable.digestivo),
         CategoryModel("21", "Higado", R.drawable.higado),
         CategoryModel("22", "Vesicula Biliar", R.drawable.vesicula),
-        CategoryModel("23", "Pancreas", R.drawable.pancreas))
+        CategoryModel("23", "Pancreas", R.drawable.pancreas)
+    )
 
     val respiratory = listOf(
         CategoryModel("24", "Mucosa olfatoria", R.drawable.bulboolfatorio),
         CategoryModel("25", "Laringe", R.drawable.laringe),
         CategoryModel("26", "Traquea", R.drawable.traquea),
         CategoryModel("27", "Bronquio y bronquiolo", R.drawable.bronquio),
-        CategoryModel("28", "Bronquiolo terminal y alveolo", R.drawable.alveolo_1))
+        CategoryModel("28", "Bronquiolo terminal y alveolo", R.drawable.alveolo_1)
+    )
 
     val cardioVascular = listOf(
         CategoryModel("29", "Corazon", R.drawable.cardio),
@@ -47,7 +53,8 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("31", "Aorta", R.drawable.aorta),
         CategoryModel("32", "Arterias y Venas", R.drawable.arteriasvenas),
         CategoryModel("33", "Arteriolas y linfaticos", R.drawable.linfatic),
-        CategoryModel("34", "Conducto toracico", R.drawable.conductotoracico))
+        CategoryModel("34", "Conducto toracico", R.drawable.conductotoracico)
+    )
 
     val nervioso = listOf(
         CategoryModel("35", "Nervio Periferico", R.drawable._688310),
@@ -55,20 +62,23 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("37", "Ganglios simpaticos", R.drawable.nervioso),
         CategoryModel("38", "Cerebro", R.drawable.cerebro),
         CategoryModel("39", "Cerebelo", R.drawable.cerebelo),
-        CategoryModel("40", "Medula espinal", R.drawable.medulaespinal))
+        CategoryModel("40", "Medula espinal", R.drawable.medulaespinal)
+    )
 
     val linfatico = listOf(
         CategoryModel("41", "Amigdala palatina", R.drawable.amigdala),
         CategoryModel("42", "Ganglio linfatico", R.drawable.ganglio),
         CategoryModel("43", "Bazo", R.drawable.bazo),
-        CategoryModel("44", "Timo", R.drawable.timo))
+        CategoryModel("44", "Timo", R.drawable.timo)
+    )
 
     val endocrino = listOf(
         CategoryModel("45", "Hipofisis", R.drawable.hipotalamo),
         CategoryModel("46", "Glandula pineal", R.drawable.pineal),
         CategoryModel("47", "Tiroides", R.drawable.tiroides),
         CategoryModel("48", "Paratiroides", R.drawable.paratiroides),
-        CategoryModel("49", "Suprarrenal", R.drawable.suprarrenal))
+        CategoryModel("49", "Suprarrenal", R.drawable.suprarrenal)
+    )
 
     val sistemaOseo = listOf(
         CategoryModel("50", "Tejido Oseo", R.drawable.images),
@@ -76,13 +86,15 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("52", "Osificacion intramembranosa", R.drawable.endocondral),
         CategoryModel("53", "Eritrocitos y granulocitos", R.drawable.eritrocito),
         CategoryModel("54", "Agranulocitos y medula osea", R.drawable.medulaosea),
-        CategoryModel("55", "Eritropoyesis y granulopoyesis", R.drawable.eritropoyesis))
+        CategoryModel("55", "Eritropoyesis y granulopoyesis", R.drawable.eritropoyesis)
+    )
 
     val sisUrinario = listOf(
         CategoryModel("56", "Riñon", R.drawable.suprarrenal),
         CategoryModel("57", "Ureter", R.drawable.ureter2),//asdas
         CategoryModel("58", "Vejiga Urinaria", R.drawable.vejiga),
-        CategoryModel("59", "Uretra", R.drawable.uretra))
+        CategoryModel("59", "Uretra", R.drawable.uretra)
+    )
 
     val sisReproductor = listOf(
         CategoryModel("60", "Testiculo", R.drawable.testicuilo),
@@ -98,28 +110,32 @@ import ar.com.learnhistology.learnhistology.R
         CategoryModel("70", "Vesicula seminal", R.drawable.epididimo),//asasda
         CategoryModel("71", "Útero 1", R.drawable.ovario),
         CategoryModel("72", "Útero 2", R.drawable.trompafalopio),
-        CategoryModel("73", "Glandula mamaria", R.drawable.glandulamamaria))
+        CategoryModel("73", "Glandula mamaria", R.drawable.glandulamamaria)
+    )
 
     val muscular = listOf(
         CategoryModel("74", "Musculo esqueletico", R.drawable.muscle),
         CategoryModel("75", "Union musculo tendinosa", R.drawable.tendon2),//asdasd
         CategoryModel("76", "Union neuromuscular", R.drawable.unionneuromuscular),
         CategoryModel("77", "Musculo cardiaco", R.drawable.musculocardiaco),
-        CategoryModel("78", "Musculo liso", R.drawable.liso))
+        CategoryModel("78", "Musculo liso", R.drawable.liso)
+    )
 
     val eyeAndEar = listOf(
         CategoryModel("79", "Segmento anterior del ojo", R.drawable.eye),
         CategoryModel("80", "Esclera, cornea y cristalino", R.drawable.cornea__cristalino),
         CategoryModel("81", "S. posterior del ojo", R.drawable.posterioreye),
         CategoryModel("82", "Oido", R.drawable.oreja),//asdas
-        CategoryModel("83", "Organo de corti", R.drawable.organ_of_corti))
+        CategoryModel("83", "Organo de corti", R.drawable.organ_of_corti)
+    )
 
     val tegumentary = listOf(
         CategoryModel("84", "Piel gruesa", R.drawable.piel_gruesa),
         CategoryModel("85", "Piel fina", R.drawable.pielfina),
         CategoryModel("86", "Glandulas sudoriparas", R.drawable.skin),
         CategoryModel("87", "Glandulas cebaceas", R.drawable.sudoripara),
-        CategoryModel("88", "Foliculo piloso y uña", R.drawable.skin))
+        CategoryModel("88", "Foliculo piloso y uña", R.drawable.skin)
+    )
 
     val questions = listOf(
         QuestionModel(1, "El cordón umbilical contiene:",
@@ -214,5 +230,6 @@ import ar.com.learnhistology.learnhistology.R
         QuestionModel(20, "¿Dónde se pueden hallar los folículos primordiales en el ovario?",
             "En la medula ovárica", "En la túnica albugínea","En la corteza", "En la submucosa",  3),
         QuestionModel(21, "", "",
-            "","", "",  3))
+            "","", "",  3)
+    )
 }

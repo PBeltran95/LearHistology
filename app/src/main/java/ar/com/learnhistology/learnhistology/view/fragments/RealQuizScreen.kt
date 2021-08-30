@@ -1,7 +1,5 @@
-package ar.com.learnhistology.learnhistology
+package ar.com.learnhistology.learnhistology.view.fragments
 
-import android.content.res.Resources
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,11 +8,10 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.core.view.forEach
-import androidx.core.view.get
 import androidx.core.view.isVisible
+import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentRealQuizScreenBinding
-import com.google.android.gms.ads.AdRequest
 
 class RealQuizScreen : Fragment() {
     private var isConfirmed = false

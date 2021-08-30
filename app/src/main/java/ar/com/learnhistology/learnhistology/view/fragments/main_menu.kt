@@ -1,4 +1,4 @@
-package ar.com.learnhistology.learnhistology
+package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import ar.com.learnhistology.learnhistology.databinding.FragmentMainMenuBinding
-import com.google.android.gms.ads.AdRequest
 
 class main_menu : Fragment() {
 

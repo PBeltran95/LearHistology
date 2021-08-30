@@ -1,4 +1,4 @@
-package ar.com.learnhistology.learnhistology.view.finalFragments.respiratory
+package ar.com.learnhistology.learnhistology.view.adapters
 
 import android.content.Context
 import android.view.View
