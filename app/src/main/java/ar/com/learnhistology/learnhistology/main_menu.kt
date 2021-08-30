@@ -25,12 +25,6 @@ class main_menu : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         chooseLayout()
-        initLoadAds()
-    }
-
-    private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerMain.loadAd(adRequest)
     }
 
     private fun chooseLayout() {

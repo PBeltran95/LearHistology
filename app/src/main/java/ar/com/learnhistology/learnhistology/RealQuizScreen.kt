@@ -17,6 +17,7 @@ import ar.com.learnhistology.learnhistology.databinding.FragmentRealQuizScreenBi
 import com.google.android.gms.ads.AdRequest
 
 class RealQuizScreen : Fragment() {
+    private var isConfirmed = false
 
     private var _binding: FragmentRealQuizScreenBinding? = null
     private val binding get() = _binding!!
@@ -34,7 +35,6 @@ class RealQuizScreen : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        initLoadAds()
         setQuestion(currentPosition)
         nextQuestion()
         checkAnswer(currentPosition)
@@ -52,11 +52,12 @@ class RealQuizScreen : Fragment() {
     }
 
     private fun nextQuestion() {
-        binding.btnNext.setOnClickListener {if (binding.radiogroup.checkedRadioButtonId == -1 ){
-            Toast.makeText(requireContext(), "Por favor selecciona una respuesta",
+        binding.btnNext.setOnClickListener {if (binding.radiogroup.checkedRadioButtonId == -1 || !isConfirmed){
+            Toast.makeText(requireContext(), "Por favor selecciona una respuesta y confirmela",
                 Toast.LENGTH_SHORT).show()
         }else{
             this.currentPosition +=1
+            isConfirmed = false
             binding.btnConfirm.isVisible = true
             binding.option1.isChecked = false
             binding.option2.isChecked = false
@@ -81,16 +82,19 @@ class RealQuizScreen : Fragment() {
         binding.btnConfirm.setOnClickListener {
             if (getAnswer() == answer){
                 score += 1
+                isConfirmed = true
                 binding.btnConfirm.isVisible = false
                 binding.radiogroup.forEach {
                     (it as RadioButton).apply {
                         if (isChecked){
-                            setBackgroundColor(Color.GREEN)
-                        }else setBackgroundColor(Color.RED)
+                            setBackgroundResource(R.drawable.radio_normal)
+                        }else setBackgroundResource(R.drawable.radio_incorrect)
                     }
                 }
             }else Toast.makeText(requireContext(), "Te equivocaste ;)",
                 Toast.LENGTH_SHORT).show()
+            score -= 1
+
 
         }
     }
@@ -113,10 +117,6 @@ class RealQuizScreen : Fragment() {
         binding.option3.text = questionList[currentPosition].optionThree
         binding.option4.text = questionList[currentPosition].optionFour
 
-    }
-    private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerMain.loadAd(adRequest)
     }
 
     override fun onDestroyView() {

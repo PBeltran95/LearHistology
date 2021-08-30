@@ -41,6 +41,7 @@ class CategoryAdapter(private val category:List<CategoryModel>, private var list
             mBinding.tvId.text = category.CategoryId
             Glide.with(context)
                 .load(category.CategoryImage)
+                .override(50,50)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(mBinding.imgCardio1)
         /*
