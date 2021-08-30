@@ -5,7 +5,7 @@ import ar.com.learnhistology.learnhistology.R
  object CategoryObjects {
 
 
-    val epithelial = listOf(//TODOS
+    val epithelial = listOf(//Implementar Room para que cada objeto venga de una DB
         CategoryModel("1", "Epitelios", R.drawable.epiteliocubico2),
         CategoryModel("2", "Tejido conectivo laxo", R.drawable.conectivo_icon),
         CategoryModel("3", "Tejido conectivo denso", R.drawable.denso))
