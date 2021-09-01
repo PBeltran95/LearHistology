@@ -3,6 +3,7 @@
     package="ar.com.learnhistology.learnhistology">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".data.UserPrefs"
         android:allowBackup="true"
@@ -11,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnHistology">
+        <activity
+            android:name=".view.AboutUs"
+            android:exported="true" />
         <activity
             android:name=".view.MainActivity"
             android:exported="true"
@@ -21,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />

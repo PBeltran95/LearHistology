@@ -389,8 +389,6 @@ class HistologicUrinary : Fragment() {
     }
 
     private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerMain.loadAd(adRequest)
     }
 
 }

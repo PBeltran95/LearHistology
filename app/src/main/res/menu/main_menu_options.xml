@@ -12,30 +12,30 @@
 
             <item
                 android:id="@+id/darkMode"
-                android:title="Dark mode"
+                android:title="Modo oscuro"
                 android:icon="@drawable/ic_dark_mode_on"
                 app:showAsAction="always"/>
             <item
                 android:id="@+id/lightMode"
-                android:title="Light mode"
+                android:title="Modo claro"
                 android:icon="@drawable/ic_dark_mode_off"
                 app:showAsAction="always"/>
 
             <item
                 android:id="@+id/language"
-                android:title="Language"
-                android:icon="@drawable/ic_language"
+                android:title="Nosotros"
+                android:icon="@drawable/ic_baseline_person_outline_24"
                 app:showAsAction="ifRoom"/>
 
             <item
                 android:id="@+id/share"
-                android:title="Share"
+                android:title="Compartir app"
                 android:icon="@drawable/ic_share"
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/btnRate"
                 android:icon="@drawable/ic_rate_us"
-                android:title="Rate us"
+                android:title="Calificanos"
                 app:showAsAction="ifRoom"/>
 
 

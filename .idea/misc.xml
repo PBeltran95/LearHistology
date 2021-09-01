@@ -28,7 +28,10 @@
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/drawable/states_cb_dark_mode.xml" value="0.3828125" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/histologic/drawable/ic_squamous_epithelium_stratified.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/histologic/mipmap-anydpi-v26/ic_launcher.xml" value="0.2375" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout-v26/fragment_main_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/activity_about_us.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_about_us.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_bone_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_cardiov_sys.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/LearnHistology/app/src/main/res/layout/fragment_conective_epitelial.xml" value="0.36666666666666664" />

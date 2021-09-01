@@ -4,6 +4,8 @@
     <string name="fragment_name">Categoria</string>
     <string name="histologia">Histologia</string>
 
+    <string name="aboutUs">Acerca de nosotros</string>
+
     <string name="epitelios" tools:ignore="TypographyOther">
 
         (A)Epitelios simples
@@ -31,7 +33,7 @@
         encargados del transporte, absorción y secreción, como el intestino, los vasos sanguíneos, las glándulas digestivas y otras glándulas
         exocrinas y el riñón. Los epitelios estratifcados tienen más de una capa celular de grosor son típicos de las superfcies que están
         sometidas a estrés de fricción, como la piel, la mucosa de la boca, el esófago y la vagina.</string>
-    
+
     <string name="conectivoLaxo" tools:ignore="TypographyOther">
         Los tejidos conjuntivos laxo y denso irregular constituyen dos de los distintos tipos de tejido conjuntivo. Los otros son los tejidos cartilaginoso, óseo, sanguíneo, adiposo y reticular.
     El tejido conjuntivo laxo se caracteriza por una proporción relativamente alta de
@@ -54,7 +56,7 @@
         \n\n
          (X)Las fbrillas de colágeno fliformes se agrupan en algunas regiones
     </string>
-    
+
     <string name="cartilagoHialino">El tejido cartilaginoso es una forma sólida, forme y un tanto maleable de
         tejido conjuntivo compuesta por condrocitos y una matriz extracelular
         muy especializada (comprende el 95 % del volumen del cartílago).
@@ -112,29 +114,12 @@
 
     </string>
 
-    <string name="laringeExample">Es una estructura hueca de 4-5 cm de largo, que comunica la
-            faringe con la tráquea. • Está compuesta por un esqueleto cartilaginoso articulado •
-            La laringe también es un órgano que reproduce sonidos, que en el ser humano contribuye
-            a la formación de los sonidos del habla.
-            4. Características histológicas de la laringe • Túnica mucosa • La lamina epitelial de la mucosa
-            laríngea las cuerdas vocales y Ios cartílagos aritenoideos estan compuestas por epitelio
-            plano estratificado • En el resto de Ia laringe, el epitelio es cilíndrico
-            seudoestratificado con cilias, cuyo movimiento desplaza la capa de mucus de la
-            superficie epitelial hacia arriba, en dirección de la faringe.
-            5. La lamina propia se compone de tejido conectivo bastante laxo Denso cerca de los cartílagos •
-            túnica submucosa • Más laxa • No hay en la cara posterior de la epiglotis y en las
-            cuerdas vocales, por lo que la mucosa laríngea se fija con firmeza a las
-            estructuras más profundas</string>
     <string name="traquea">Tráquea: Está compuesta por 4 capas definidas, Mucosa: epitelio pseudoestratificado cilíndrico ciliado y una lámina propia con fibras elásticas abundantes. Submucosa, una capa cartilaginosa, y una adventicia. Los cartílagos hialinos con forma de C y el tejido fibroelastico y musculo liso cierran la brecha entre los extremos libres de la cara posterior de los cartílagos, uniéndose al esófago. Epitelio traqueal: Está compuesto por células ciliadas, que proveen un movimiento de barrido coordinado de la cubierta de mucosa desde las partes más distales de las vías aéreas hacia la faringe, actúan en la forma de barredora que sirve como mecanismo protector para la eliminación de pequeñas partículas.
         </string>
-    <string name="Bronquio">Al principio tienen la misma estructura que la tráquea, en el sitio donde se hacen intrapulmonares cambian, los anillos cartilaginosos se tornan pequeños y menos abundantes. Estas placas por fin desaparecen en el sitio donde la vía aérea alcanza un diámetro alrededor de 1 mm y a partir de allí el bronquio empieza a llamarse bronquiolo. Los bronquios pueden identificarse por sus placas de cartílago y una capa circular de musculo liso. La segunda modificación que ocurre en la pared del bronquio intrapulmonar es la adición de musculo liso para formar una capa circunferencial completa. La pared del bronquio así queda conformada por cinco capas, una mucosa, muscular, submucosa (en los bronquios mayores hay glándulas y tejido adiposo), capa cartilaginosa y adventicia.</string>
     <string name="alveolo">Alveolos: Los alveolos son los espacios aéreos terminales del aparato respiratorio y las estructuras en las que se produce el intercambio gaseoso, su pared mide 0.2 mm de diámetro. Los conductos alveolares son vías aéreas alargadas que casi no tienen paredes sino solo alveolos. En los tabiques hay anillos de ML. Los sacos alveolares son espacios rodeados por cúmulos de alveolos. Los alveolos circundantes se abren hacia estos espacios. El epitelio alveolar está compuesto por células alveolares tipo 1 que son pavimentosas planas muy delgadas. Alveolares tipo 2 cubicas, dispersas entre las 1, tienen cuerpos laminares que contienen el surfactante, además son las progenitoras de las alveolares tipo 1, células en cepillo también en cantidad escasa pero que servirían como receptores para verificar la calidad del aire.</string>
 
 
-    <string name="Setting">Setting</string>
-    <string name="Dark">Dark mode</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="quizFragment">Quiz</string>
     <string name="realQuizName"> </string>
 
@@ -441,6 +426,8 @@ celulares se eliminan hacia el conducto pilosebáceo.
 </string>
 
     <string name="foliculo_piloso">Los pelos se componen de células queratinizadas que se desarrollan a partir de los folículos pilosos. Los pelos están presentes sobre casi toda la superficie corporal y sólo se observa su falta en los bordes y las palmas de las manos, en los bordes y las plantas de los pies, en los labios y en la piel que rodea los orificios urogenitales. La coloración del pelo está dada por el contenido y tipo de melanina que posee. El folículo varía en apariencia, según esté en fase de crecimiento o de reposo; el folículo en crecimiento es el más complejo. Los anexos cutáneos (faneras), en especial los folículos pilosos y las glándulas sudoríparas, son de particular importancia en la curación de las heridas cutáneas. Sirven como fuente de células epiteliales nuevas cuando hay una destrucción epidérmica extensa, como en abrasiones profundas y quemaduras de segundo grado.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -75,8 +75,6 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     }
 
     private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerMain.loadAd(adRequest)
     }
     private fun initAdapter(system:List<CategoryModel>){
         categoryAdapter = CategoryAdapter(system,this)

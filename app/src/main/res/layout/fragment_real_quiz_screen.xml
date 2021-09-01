@@ -15,7 +15,7 @@
             android:id="@+id/tvPresentation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Examen"
+            android:text="QUIZ"
             android:textAlignment="center"
             android:textAppearance="?attr/textAppearanceHeadline4"
             app:layout_constraintTop_toTopOf="parent"

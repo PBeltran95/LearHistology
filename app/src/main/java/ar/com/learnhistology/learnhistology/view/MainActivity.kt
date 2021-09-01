@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import ar.com.learnhistology.learnhistology.BuildConfig
@@ -19,6 +20,7 @@ import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.UserPrefs.Companion.preferences
 import ar.com.learnhistology.learnhistology.databinding.ActivityMainBinding
 import ar.com.learnhistology.learnhistology.databinding.ActivityMainBinding.inflate
+import ar.com.learnhistology.learnhistology.view.fragments.main_menuDirections
 
 class MainActivity : AppCompatActivity() {
 
@@ -60,11 +62,16 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.darkMode -> darkMode()
             R.id.lightMode -> lightMode()
-            R.id.language -> Toast.makeText(this, "Aun no disponible", Toast.LENGTH_SHORT).show()
+            R.id.language -> toAboutUsFragment()
             R.id.share -> shareApp()
             R.id.btnRate -> rateApp()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun toAboutUsFragment() {
+        val intent = Intent(this, AboutUs::class.java)
+        startActivity(intent)
     }
 
     private fun rateApp() {
