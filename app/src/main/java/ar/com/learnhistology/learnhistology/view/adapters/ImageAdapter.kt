@@ -1,10 +1,12 @@
 package ar.com.learnhistology.learnhistology.view.adapters
 
 import android.content.Context
+import android.graphics.CornerPathEffect
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.viewpager.widget.PagerAdapter
+import ar.com.learnhistology.learnhistology.R
 import com.ortiz.touchview.TouchImageView
 
 

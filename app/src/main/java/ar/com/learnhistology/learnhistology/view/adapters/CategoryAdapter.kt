@@ -11,11 +11,11 @@ import ar.com.learnhistology.learnhistology.databinding.ItemCategoryBinding
 import ar.com.learnhistology.learnhistology.view.OnclickListener
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 
-class CategoryAdapter(private val category:List<CategoryModel>, private var listener: OnclickListener):
+class CategoryAdapter(private val category:List<CategoryModel>, private var listener: OnclickListener, private var context: Context):
     RecyclerView.Adapter<CategoryAdapter.CategoryHolder>() {
 
-    private lateinit var context:Context
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -43,6 +43,7 @@ class CategoryAdapter(private val category:List<CategoryModel>, private var list
             Glide.with(context)
                 .load(category.CategoryImage)
                 .override(50,50)
+                .transform(RoundedCorners(5))
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(mBinding.imgCardio1)
         /*

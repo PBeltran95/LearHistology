@@ -78,7 +78,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     private fun initLoadAds() {
     }
     private fun initAdapter(system:List<CategoryModel>){
-        categoryAdapter = CategoryAdapter(system,this)
+        categoryAdapter = CategoryAdapter(system,this, requireContext())
         linearLayoutManager = LinearLayoutManager(requireContext())
         mGridLayout = GridLayoutManager(requireContext(), 2)
         binding.rvCategory.apply {
