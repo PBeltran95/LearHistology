@@ -8,9 +8,7 @@
         android:right="100dp"
         android:top="260dp"
         android:bottom="260dp"
-        >
-        <bitmap
-            android:src="@drawable/splash_icon"
-            android:gravity="center"/>
-    </item>
+
+        android:drawable="@drawable/splash_icon"
+        android:gravity="center" />
 </layer-list>
