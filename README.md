@@ -18,7 +18,7 @@ Finalmente aqui debajo dejo un video de muestra con todas las funcionalidades de
 [![Alt text](https://img.youtube.com/vi/rNR5wN4LG04/0.jpg)](https://www.youtube.com/watch?v=rNR5wN4LG04)
 
 
-Las tecnologias utilizadas para este proyecto fueron:
+##Las tecnologias utilizadas para este proyecto fueron:
 
 -ConstraintLayout
 -RecyclerView
@@ -32,7 +32,7 @@ Las tecnologias utilizadas para este proyecto fueron:
 -Adservices de googlePlay services
 -Glide
 
-Algunas capturas mas!
+##Algunas capturas mas!
 
 <img src="screen1 (1).png" width="300" height="600"><img src="screen1 (2).png" width="300" height="600">
 
