@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ar.com.learnhistology.learnhistology.data.models.CategoryModel
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
-import ar.com.learnhistology.learnhistology.databinding.FragmentDigSysBinding
+import ar.com.learnhistology.learnhistology.databinding.SelectionOrganFragmentBinding
 import ar.com.learnhistology.learnhistology.view.OnclickListener
 import ar.com.learnhistology.learnhistology.view.adapters.CategoryAdapter
 import ar.com.learnhistology.learnhistology.viewModel.WhenCategoryModel
@@ -24,7 +24,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         const val BUTTON = "button"
     }
 
-    private var _binding:FragmentDigSysBinding? = null
+    private var _binding:SelectionOrganFragmentBinding? = null
     private val binding get() = _binding!!
     private lateinit var categoryAdapter: CategoryAdapter
     private lateinit var linearLayoutManager:RecyclerView.LayoutManager
@@ -42,7 +42,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDigSysBinding.inflate(inflater, container, false)
+        _binding = SelectionOrganFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -76,6 +76,8 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     }
 
     private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerSelectionScreen.loadAd(adRequest)
     }
     private fun initAdapter(system:List<CategoryModel>){
         categoryAdapter = CategoryAdapter(system,this, requireContext())

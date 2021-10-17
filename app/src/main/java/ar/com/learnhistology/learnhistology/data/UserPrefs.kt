@@ -14,6 +14,4 @@ class UserPrefs:Application() {
         MobileAds.initialize(this)
     }
 
-
-
 }

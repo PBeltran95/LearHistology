@@ -3,46 +3,28 @@ package ar.com.learnhistology.learnhistology.view.fragments
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import androidx.viewpager.widget.ViewPager
 import ar.com.learnhistology.learnhistology.R
-import ar.com.learnhistology.learnhistology.databinding.FragmentHistologicUrinaryBinding
+import ar.com.learnhistology.learnhistology.databinding.HistologyFragmentBinding
 import ar.com.learnhistology.learnhistology.view.adapters.ImageAdapter
 import com.afollestad.viewpagerdots.DotsIndicator
 import com.google.android.gms.ads.AdRequest
 
-class HistologicUrinary : Fragment() {
+class HistologicUrinary : Fragment(R.layout.histology_fragment) {
 
     lateinit var mViewPager: ViewPager
-
-
-    companion object {
-        const val ORGAN = "organ"
-    }
-
-    private var _binding: FragmentHistologicUrinaryBinding? = null
+    private var _binding: HistologyFragmentBinding? = null
     private val binding get() = _binding!!
-    private lateinit var organId: String
+    private  var organId = ""
+    private val args by navArgs<HistologicUrinaryArgs>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            organId = it.getString(ORGAN).toString()
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentHistologicUrinaryBinding.inflate(inflater, container, false)
-        return binding.root
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        organId = args.organ
+        _binding = HistologyFragmentBinding.bind(view)
+
         val text1 = getString(R.string.epitelios)
         val text2 = getString(R.string.conectivoLaxo)
         val text3 = getString(R.string.conectivoDenso)
@@ -345,7 +327,9 @@ class HistologicUrinary : Fragment() {
             "73" -> images = arrayOf(R.drawable.mamaria_1, R.drawable.mamaria_2, R.drawable.mamaria_3,
                 R.drawable.mamaria_4, R.drawable.mamaria_5, R.drawable.mamaria_6, R.drawable.mamaria_7)
             //muscular
-            "74" -> images = arrayOf(R.drawable.celula_muscular_estriada_1, R.drawable.celula_muscular_estriada_2)
+            "74" -> images = arrayOf(R.drawable.celula_muscular_estriada_1, R.drawable.celula_muscular_estriada_2,
+                R.drawable.musculo_esqueletico_actualizacion_1,R.drawable.musculo_esqueletico_actualizacion_2,R.drawable.musculo_esqueletico_actualizacion_3,)
+
             "75" -> images = arrayOf(R.drawable.tendon_1)
             "76" -> images = arrayOf(R.drawable.placa_neuromuscular_1)
             "77" -> images = arrayOf(R.drawable.musculo_cardiaco, R.drawable.musculo_cardiaco_2)
@@ -367,7 +351,7 @@ class HistologicUrinary : Fragment() {
         }
 
 
-//Declaracion de viewPagerBinding y su adaptador, tambien le envie el contexto porque lo necesita.
+//Iniciacion del viewPager.
         mViewPager = binding.viewPager
 
         val mImageAdapter = ImageAdapter(requireContext(), images)
@@ -380,6 +364,7 @@ class HistologicUrinary : Fragment() {
         when (context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
             Configuration.UI_MODE_NIGHT_YES -> {
                 dots.setDotTintRes(R.color.white)
+                binding.expandableText.setTextColor(resources.getColor(R.color.white))
             }
             Configuration.UI_MODE_NIGHT_NO -> {
                 dots.setDotTintRes(R.color.black)
@@ -388,7 +373,10 @@ class HistologicUrinary : Fragment() {
         initLoadAds()
     }
 
+
     private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerHistology.loadAd(adRequest)
     }
 
 }

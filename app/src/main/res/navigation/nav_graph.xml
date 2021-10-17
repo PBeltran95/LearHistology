@@ -10,7 +10,7 @@
         android:id="@+id/main_menu"
         android:name="ar.com.learnhistology.learnhistology.view.fragments.main_menu"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_main_menu">
+        tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/action_main_menu_to_dig_sys_fragment"
             app:destination="@id/dig_sys_fragment"
@@ -30,7 +30,7 @@
         android:id="@+id/dig_sys_fragment"
         android:name="ar.com.learnhistology.learnhistology.view.fragments.dig_sys_fragment"
         android:label="@string/fragment_name"
-        tools:layout="@layout/fragment_dig_sys">
+        tools:layout="@layout/selection_organ_fragment">
         <action
             android:id="@+id/action_dig_sys_fragment_to_histologicUrinary2"
             app:destination="@id/histologicUrinary"

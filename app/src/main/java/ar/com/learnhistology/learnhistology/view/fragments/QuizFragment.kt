@@ -39,6 +39,8 @@ class QuizFragment : Fragment() {
 
 
     private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerPreQuiz.loadAd(adRequest)
     }
 
     override fun onDestroyView() {

@@ -12,6 +12,7 @@ import androidx.core.view.isVisible
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentRealQuizScreenBinding
+import com.google.android.gms.ads.AdRequest
 
 class RealQuizScreen : Fragment() {
     private var isConfirmed = false
@@ -35,6 +36,12 @@ class RealQuizScreen : Fragment() {
         setQuestion(currentPosition)
         nextQuestion()
         checkAnswer(currentPosition)
+        initAds()
+    }
+
+    private fun initAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerQuiz.loadAd(adRequest)
     }
 
     private fun finishQuiz(currentPosition:Int) {
