@@ -36,7 +36,4 @@ Finalmente aqui debajo dejo un video de muestra con todas las funcionalidades de
 
 <img src="screen1 (1).png" width="300" height="600"><img src="screen1 (2).png" width="300" height="600">
 
-Quiero mencionar que por cuestiones de derechos de autor finalmente no voy a implementar anuncios en la app, con lo que en la version descargable no van a estar presentes.
-Proximamente voy a publicar el link a playstore cuando finalmente la app este aprobada.
-
 Gracias por leer y saludos!
