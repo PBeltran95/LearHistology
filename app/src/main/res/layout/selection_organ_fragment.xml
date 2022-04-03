@@ -36,7 +36,7 @@
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/icon_views"
         android:scaleX="2"

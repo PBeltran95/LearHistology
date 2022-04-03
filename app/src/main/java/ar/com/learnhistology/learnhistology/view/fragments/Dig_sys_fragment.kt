@@ -97,8 +97,8 @@ class dig_sys_fragment : Fragment(), OnclickListener {
             layoutManager = object : GridLayoutManager(context, spanCount) {
                 override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
 
-                    lp.height = height / 6
-                    lp.width = width / spanCount
+                    lp.height = height / 2
+                    lp.width = (width / 5) * 2
 
                     return true
                 }
