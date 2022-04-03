@@ -1,5 +1,8 @@
 package ar.com.learnhistology.learnhistology.view.fragments
 
+import android.content.Context
+import android.content.res.Configuration
+import android.content.res.Resources
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -83,9 +86,32 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         categoryAdapter = CategoryAdapter(system,this, requireContext())
         linearLayoutManager = LinearLayoutManager(requireContext())
         mGridLayout = GridLayoutManager(requireContext(), 2)
-        binding.rvCategory.apply {
-            layoutManager = mGridLayout
-            adapter = categoryAdapter
+        binding.rvCategory.layoutManager = setupSizes(resources, requireContext())
+        binding.rvCategory.apply { adapter = categoryAdapter  }
+    }
+
+
+    fun setupSizes(resources: Resources, context: Context, spanCount: Int = 2, d:Int = 6, t:Int = 4 ): RecyclerView.LayoutManager{
+        val layoutManager: RecyclerView.LayoutManager?
+        if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            layoutManager = object : GridLayoutManager(context, spanCount) {
+                override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+
+                    lp.height = height / 6
+                    lp.width = width / spanCount
+
+                    return true
+                }
+            }
+            return layoutManager
+        } else {
+            layoutManager = object : GridLayoutManager(context, 2) {
+                override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+                    lp.height = height / 8
+                    return true
+                }
+            }
+            return layoutManager
         }
     }
 

@@ -1,12 +1,10 @@
 package ar.com.learnhistology.learnhistology.view
 
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Paint
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ar.com.learnhistology.learnhistology.R
+import androidx.appcompat.app.AppCompatActivity
 import ar.com.learnhistology.learnhistology.databinding.ActivityAboutUsBinding
 
 class AboutUs : AppCompatActivity() {
