@@ -12,8 +12,8 @@ android {
         applicationId "ar.com.learnhistology.learnhistology"
         minSdk 23
         targetSdk 34
-        versionCode 6
-        versionName "1.5"
+        versionCode 30
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,21 +46,30 @@ android {
 
 dependencies {
 
+    //Android
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //Testing
     testImplementation 'junit:junit:'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    //ExpandableTextView
     implementation 'com.ms-square:expandableTextView:0.1.4'
+    //TouchImageView
     implementation 'com.github.MikeOrtiz:TouchImageView:3.1.0'
+    //ImageDots
     implementation 'com.afollestad:viewpagerdots:1.0.0'
+    //Lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
+    //Admob
     implementation 'com.google.android.gms:play-services-ads:22.4.0'
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
