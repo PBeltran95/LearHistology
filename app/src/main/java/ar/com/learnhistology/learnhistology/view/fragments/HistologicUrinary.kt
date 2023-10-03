@@ -1,29 +1,31 @@
 package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.content.res.Configuration
+import android.content.res.Configuration.UI_MODE_NIGHT_NO
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.viewpager.widget.ViewPager
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.databinding.HistologyFragmentBinding
 import ar.com.learnhistology.learnhistology.view.adapters.ImageAdapter
 import com.afollestad.viewpagerdots.DotsIndicator
-import com.google.android.gms.ads.AdRequest
 
 class HistologicUrinary : Fragment(R.layout.histology_fragment) {
 
     lateinit var mViewPager: ViewPager
-    private var _binding: HistologyFragmentBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding : HistologyFragmentBinding
     private  var organId = ""
     private val args by navArgs<HistologicUrinaryArgs>()
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         organId = args.organ
-        _binding = HistologyFragmentBinding.bind(view)
+        binding = HistologyFragmentBinding.bind(view)
 
         val text1 = getString(R.string.epitelios)
         val text2 = getString(R.string.conectivoLaxo)
@@ -362,21 +364,18 @@ class HistologicUrinary : Fragment(R.layout.histology_fragment) {
         val dots: DotsIndicator = binding.dots
         dots.attachViewPager(mViewPager)
         when (context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
-            Configuration.UI_MODE_NIGHT_YES -> {
+            UI_MODE_NIGHT_YES -> {
                 dots.setDotTintRes(R.color.white)
-                binding.expandableText.setTextColor(resources.getColor(R.color.white))
+                binding.expandableText.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.white
+                    )
+                )
             }
-            Configuration.UI_MODE_NIGHT_NO -> {
+            UI_MODE_NIGHT_NO -> {
                 dots.setDotTintRes(R.color.black)
             }
         }
-        initLoadAds()
     }
-
-
-    private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerHistology.loadAd(adRequest)
-    }
-
 }

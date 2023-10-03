@@ -3,8 +3,8 @@ package ar.com.learnhistology.learnhistology.data
 import android.app.Application
 import com.google.android.gms.ads.MobileAds
 
-class UserPrefs:Application() {
-    companion object{
+class UserPrefs : Application() {
+    companion object {
         lateinit var preferences: SharedPreferences
     }
 

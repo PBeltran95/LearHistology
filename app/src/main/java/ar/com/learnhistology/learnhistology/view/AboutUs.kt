@@ -15,7 +15,7 @@ class AboutUs : AppCompatActivity() {
         mBinding = ActivityAboutUsBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        mBinding.tvClickable.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG)
+        mBinding.tvClickable.paintFlags = Paint.UNDERLINE_TEXT_FLAG
         mBinding.tvClickable.setOnClickListener {
             val uri:Uri = Uri.parse("https://www.linkedin.com/in/pablo-beltran95/")
             val goToUri = Intent(Intent.ACTION_VIEW,uri)

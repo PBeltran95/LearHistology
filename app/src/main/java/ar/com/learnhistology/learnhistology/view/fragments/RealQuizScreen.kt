@@ -1,47 +1,32 @@
 package ar.com.learnhistology.learnhistology.view.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.core.view.forEach
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
 import ar.com.learnhistology.learnhistology.databinding.FragmentRealQuizScreenBinding
 import com.google.android.gms.ads.AdRequest
 
-class RealQuizScreen : Fragment() {
+class RealQuizScreen : Fragment(R.layout.fragment_real_quiz_screen) {
     private var isConfirmed = false
 
-    private var _binding: FragmentRealQuizScreenBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentRealQuizScreenBinding
 
     private var currentPosition:Int = 0
-    val questionList = CategoryObjects.questions
+    private val questionList = CategoryObjects.questions
     var score = 0
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentRealQuizScreenBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding = FragmentRealQuizScreenBinding.bind(view)
         setQuestion(currentPosition)
         nextQuestion()
         checkAnswer(currentPosition)
-        initAds()
-    }
-
-    private fun initAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerQuiz.loadAd(adRequest)
     }
 
     private fun finishQuiz(currentPosition:Int) {
@@ -121,10 +106,5 @@ class RealQuizScreen : Fragment() {
         binding.option3.text = questionList[currentPosition].optionThree
         binding.option4.text = questionList[currentPosition].optionFour
 
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

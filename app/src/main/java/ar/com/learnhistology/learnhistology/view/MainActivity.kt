@@ -3,16 +3,12 @@ package ar.com.learnhistology.learnhistology.view
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
-import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import ar.com.learnhistology.learnhistology.BuildConfig
@@ -20,14 +16,13 @@ import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.UserPrefs.Companion.preferences
 import ar.com.learnhistology.learnhistology.databinding.ActivityMainBinding
 import ar.com.learnhistology.learnhistology.databinding.ActivityMainBinding.inflate
-import ar.com.learnhistology.learnhistology.view.fragments.main_menuDirections
+import com.google.android.gms.ads.AdRequest
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mBinding:ActivityMainBinding
+    private lateinit var mBinding: ActivityMainBinding
     private lateinit var navController: NavController
 
-    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_LearnHistology)
 
@@ -48,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         }else{
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
+        initLoadAds()
     }
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
@@ -113,4 +109,8 @@ class MainActivity : AppCompatActivity() {
         preferences.saveMode(mode)
     }
 
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        mBinding.banner.loadAd(adRequest)
+    }
 }

@@ -5,24 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragments.HistologicUrinary">
     <!-- This is just for the name of the project -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/banner_histology"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-5491969757059387/6118153077"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
 
         <!-- This is the actual mandatory library attributes that must be used -->
         <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
@@ -32,7 +20,7 @@
             android:layout_marginTop="10dp"
             expandableTextView:maxCollapsedLines="4"
             expandableTextView:animDuration="200"
-            expandableTextView:layout_constraintTop_toBottomOf="@id/banner_histology"
+            expandableTextView:layout_constraintTop_toTopOf="parent"
             expandableTextView:layout_constraintStart_toStartOf="parent"
             expandableTextView:layout_constraintEnd_toEndOf="parent">
 

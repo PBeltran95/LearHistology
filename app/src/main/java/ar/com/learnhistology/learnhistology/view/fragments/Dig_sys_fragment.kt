@@ -4,35 +4,37 @@ import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ar.com.learnhistology.learnhistology.data.models.CategoryModel
+import ar.com.learnhistology.learnhistology.R
 import ar.com.learnhistology.learnhistology.data.CategoryObjects
+import ar.com.learnhistology.learnhistology.data.models.CategoryModel
 import ar.com.learnhistology.learnhistology.databinding.SelectionOrganFragmentBinding
 import ar.com.learnhistology.learnhistology.view.OnclickListener
 import ar.com.learnhistology.learnhistology.view.adapters.CategoryAdapter
+import ar.com.learnhistology.learnhistology.view.fragments.FragmentOrganSelectionDirections.Companion.actionDigSysFragmentToHistologicUrinary2
 import ar.com.learnhistology.learnhistology.viewModel.WhenCategoryModel
 import com.google.android.gms.ads.AdRequest
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-class dig_sys_fragment : Fragment(), OnclickListener {
+class FragmentOrganSelection : Fragment(R.layout.selection_organ_fragment), OnclickListener {
     companion object {
         const val BUTTON = "button"
     }
 
-    private var _binding:SelectionOrganFragmentBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: SelectionOrganFragmentBinding
     private lateinit var categoryAdapter: CategoryAdapter
-    private lateinit var linearLayoutManager:RecyclerView.LayoutManager
+    private lateinit var linearLayoutManager: RecyclerView.LayoutManager
     private lateinit var mGridLayout: GridLayoutManager
-    private lateinit var buttonId:String
+    private lateinit var buttonId: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,18 +43,11 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = SelectionOrganFragmentBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        initLoadAds()
-        GlobalScope.launch(Dispatchers.Main) {
-            val result = withContext(Dispatchers.IO){prueba() }
+        super.onViewCreated(view, savedInstanceState)
+        binding = SelectionOrganFragmentBinding.bind(view)
+        lifecycleScope.launch(Dispatchers.Main) {
+            val result = withContext(Dispatchers.IO){ prueba() }
             initAdapter(result)
         }
     }
@@ -78,10 +73,6 @@ class dig_sys_fragment : Fragment(), OnclickListener {
         return objetoRecuperado
     }
 
-    private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.bannerSelectionScreen.loadAd(adRequest)
-    }
     private fun initAdapter(system:List<CategoryModel>){
         categoryAdapter = CategoryAdapter(system,this, requireContext())
         linearLayoutManager = LinearLayoutManager(requireContext())
@@ -91,7 +82,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
     }
 
 
-    fun setupSizes(resources: Resources, context: Context, spanCount: Int = 2, d:Int = 6, t:Int = 4 ): RecyclerView.LayoutManager{
+    private fun setupSizes(resources: Resources, context: Context, spanCount: Int = 2, d:Int = 6, t:Int = 4 ): RecyclerView.LayoutManager{
         val layoutManager: RecyclerView.LayoutManager?
         if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             layoutManager = object : GridLayoutManager(context, spanCount) {
@@ -121,7 +112,7 @@ class dig_sys_fragment : Fragment(), OnclickListener {
 
     private fun navigateToHistologyFragment(categoryModel: CategoryModel) {
             val buttonText = WhenCategoryModel().getButton(categoryModel.CategoryName)
-            dig_sys_fragmentDirections.actionDigSysFragmentToHistologicUrinary2(buttonText)
-            view?.findNavController()?.navigate(dig_sys_fragmentDirections.actionDigSysFragmentToHistologicUrinary2(buttonText))
+            actionDigSysFragmentToHistologicUrinary2(buttonText)
+            view?.findNavController()?.navigate(actionDigSysFragmentToHistologicUrinary2(buttonText))
     }
 }
